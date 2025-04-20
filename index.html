@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia Carolinas - Transformando Vidas, Construindo Futuros">
+    <title>Academia Carolinas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40" alt="Academia Carolinas Logo" width="40" height="40">
+                <span>Academia Carolinas</span>
+            </div>
+            <nav class="desktop-nav" aria-label="Menu principal">
+                <a href="/pages/quem-somos.html">Quem Somos</a>
+                <a href="/pages/localizacao.html">Localização</a>
+                <a href="/pages/como-funciona.html">Como Funciona</a>
+                <a href="/pages/transparencia.html">Transparência</a>
+                <a href="/pages/galeria.html">Galeria</a>
+                <a href="/pages/contato.html">Contato</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+            <a href="/pages/quem-somos.html">Quem Somos</a>
+            <a href="/pages/localizacao.html">Localização</a>
+            <a href="/pages/como-funciona.html">Como Funciona</a>
+            <a href="/pages/transparencia.html">Transparência</a>
+            <a href="/pages/galeria.html">Galeria</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="quem-somos">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transformando Vidas,<br>Construindo Futuros</h1>
+                <p>Junte-se a nós nessa jornada de transformação social e faça parte da mudança que queremos ver no mundo.</p>
+                <div class="hero-buttons">
+                    <a href="#como-funciona" class="btn btn-primary">Como participar</a>
+                    <a href="#projetos" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <p class="stat-number">1000+</p>
+                    <p class="stat-text">Pessoas impactadas</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number">50+</p>
+                    <p class="stat-text">Projetos realizados</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number">100+</p>
+                    <p class="stat-text">Voluntários Ativos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projetos">
+        <div class="container">
+            <h2>Nossos Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" aria-hidden="true"></div>
+                    <div class="project-content">
+                        <h3>Título do card</h3>
+                        <p>Descrição do card</p>
+                        <a href="#" class="project-link">Saiba Mais →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" aria-hidden="true"></div>
+                    <div class="project-content">
+                        <h3>Título do card</h3>
+                        <p>Descrição do card</p>
+                        <a href="#" class="project-link">Saiba Mais →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" aria-hidden="true"></div>
+                    <div class="project-content">
+                        <h3>Título do card</h3>
+                        <p>Descrição do card</p>
+                        <a href="#" class="project-link">Saiba Mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="como-funciona">
+        <div class="container">
+            <h2>Faça Parte da Mudança</h2>
+            <p>Sua contribuição pode fazer a diferença na vida de muitas pessoas. Junte-se a nós nessa missão!</p>
+            <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Sobre nós</h3>
+                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p>Email: <a href="mailto:contato@ong.org">contato@ong.org</a></p>
+                    <p>Telefone: <a href="tel:+551112345678">(11) 1234-5678</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                        <button type="submit" class="btn btn-primary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 ONG Name. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
