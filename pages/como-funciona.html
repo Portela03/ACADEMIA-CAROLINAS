@@ -3,15 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como Funciona</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="Entenda como funciona a Academia Carolinas - Nossa metodologia e processos em prol da transformação social na Cidade Tiradentes">
+    <title>Como Funciona - Academia Carolinas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/como-funciona.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Como Funciona</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Academia Carolinas Logo" width="40" height="40">
+                <span>Academia Carolinas</span>
+            </div>
+            <nav class="desktop-nav" aria-label="Menu principal">
+                <a href="../index.html">Início</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                
+                <a href="como-funciona.html" class="active">Como Funciona</a>
+                <a href="transparencia.html">Transparência</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="localizacao.html">Localização</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+            <a href="../index.html">Início</a>
+            <a href="quem-somos.html">Quem Somos</a>
+            
+            <a href="como-funciona.html" class="active">Como Funciona</a>
+            <a href="transparencia.html">Transparência</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="localizacao.html">Localização</a>
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
-    <main>
-        <p>Informações sobre como funciona.</p>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1><i class="fas fa-cogs hero-icon"></i> Como Funcionamos</h1>
+            <p>Conheça nossa metodologia e como transformamos vidas na Cidade Tiradentes</p>
+            <div class="hero-cta">
+                <a href="#methodology" class="btn btn-light">Nossa Metodologia</a>
+                <a href="#join" class="btn btn-outline">Participe</a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,224C672,213,768,171,864,165.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="methodology" class="methodology-section">
+            <h2><i class="fas fa-lightbulb section-icon"></i> Nossa Metodologia</h2>
+            <p class="intro-text">Na Academia Carolinas, acreditamos no poder transformador da educação, da solidariedade e do trabalho coletivo. Nossa metodologia é baseada em três pilares fundamentais que norteiam todas as nossas ações:</p>
+            
+            <div class="pillars">
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Solidariedade</h3>
+                    <p>Construímos redes de apoio mútuo e cooperação, reconhecendo que juntos somos mais fortes. A solidariedade é a base para desenvolver relações horizontais e transformadoras dentro da comunidade.</p>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Educação Libertadora</h3>
+                    <p>Promovemos uma educação que capacita e liberta, valorizando os saberes locais e incentivando o pensamento crítico. Acreditamos que a educação é uma ferramenta poderosa para a transformação social.</p>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Incentivamos práticas sustentáveis que respeitam o meio ambiente e promovem o bem-estar social. Trabalhamos com produtos agroecológicos e valorizamos o conhecimento tradicional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <h2><i class="fas fa-tasks section-icon"></i> Nosso Processo de Trabalho</h2>
+            
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Identificação de Necessidades</h3>
+                        <p>O primeiro passo é identificar as necessidades reais da comunidade através de escuta ativa e diálogo constante. Realizamos encontros e pesquisas participativas para entender os desafios enfrentados pelos moradores da Cidade Tiradentes, especialmente na Comunidade Souza Ramos.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Mobilização de Recursos</h3>
+                        <p>Estabelecemos parcerias estratégicas com organizações públicas e privadas para mobilizar recursos necessários. Trabalhamos com a Rede Cozinha Escola (municipal), Cozinha Solidária, Frente Alimenta, Instituto Assaí e MST para garantir a segurança alimentar da comunidade.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Implementação de Ações</h3>
+                        <p>Desenvolvemos ações concretas em diferentes frentes:
+                           <ul>
+                               <li>Preparação e distribuição de 600 marmitas diárias</li>
+                               <li>Atividades educativas em contraturno escolar para 30 crianças e jovens</li>
+                               <li>Oficinas de Cidadania para mulheres da comunidade</li>
+                               <li>Produção de produtos agroecológicos e participação em feiras</li>
+                           </ul>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Avaliação e Aprimoramento</h3>
+                        <p>Realizamos avaliações periódicas de nossas ações, sempre com a participação ativa da comunidade. Este processo permite identificar os pontos fortes e as áreas que precisam ser melhoradas, garantindo que nossas atividades continuem relevantes e efetivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programs-section">
+            <h2><i class="fas fa-project-diagram section-icon"></i> Nossos Programas</h2>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <i class="fas fa-utensils program-icon"></i>
+                        <h3>Segurança Alimentar</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>Nosso programa de segurança alimentar garante acesso a alimentos nutritivos e de qualidade para a comunidade:</p>
+                        <ul>
+                            <li>Distribuição de 600 marmitas diárias</li>
+                            <li>Utilização de ingredientes agroecológicos</li>
+                            <li>Parceria com produtores locais e movimentos sociais</li>
+                            <li>Capacitação em nutrição e aproveitamento integral dos alimentos</li>
+                        </ul>
+                        <div class="program-schedule">
+                            <p><strong>Horário:</strong> Segunda a sexta, das 10h às 14h</p>
+                            <p><strong>Local:</strong> Cozinha comunitária Souza Ramos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        <i class="fas fa-chalkboard-teacher program-icon"></i>
+                        <h3>Educação Complementar</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>Oferecemos atividades educativas diversificadas para crianças e jovens em horário complementar ao da escola:</p>
+                        <ul>
+                            <li>Informática básica e avançada</li>
+                            <li>Capoeira e educação física</li>
+                            <li>Letramento antirracista e literatura</li>
+                            <li>Origami e artes</li>
+                            <li>Reforço escolar personalizado</li>
+                        </ul>
+                        <div class="program-schedule">
+                            <p><strong>Horário:</strong> Segunda a sexta, das 8h às 12h e das 13h às 17h</p>
+                            <p><strong>Local:</strong> Espaço Educativo Carolinas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        <i class="fas fa-female program-icon"></i>
+                        <h3>Formação e Emancipação Feminina</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>Fortalecemos o protagonismo feminino através de formação e apoio para as mulheres da comunidade:</p>
+                        <ul>
+                            <li>Oficinas de Cidadania e direitos</li>
+                            <li>Formação profissional e empreendedorismo</li>
+                            <li>Rodas de conversa sobre saúde da mulher</li>
+                            <li>Apoio psicossocial</li>
+                        </ul>
+                        <div class="program-schedule">
+                            <p><strong>Horário:</strong> Terças e quintas, das 19h às 21h</p>
+                            <p><strong>Local:</strong> Sala Multiuso Carolinas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        <i class="fas fa-hand-holding-usd program-icon"></i>
+                        <h3>Geração de Renda</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>Promovemos a autonomia financeira através de iniciativas de economia solidária:</p>
+                        <ul>
+                            <li>Produção de alimentos agroecológicos</li>
+                            <li>Participação em feiras e eventos</li>
+                            <li>Capacitação em gestão e comercialização</li>
+                            <li>Desenvolvimento de produtos locais</li>
+                        </ul>
+                        <div class="program-schedule">
+                            <p><strong>Horário:</strong> Segundas, quartas e sextas, das 14h às 18h</p>
+                            <p><strong>Local:</strong> Espaço Produtivo Carolinas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact-section">
+            <h2><i class="fas fa-chart-line section-icon"></i> Nosso Impacto</h2>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">1000+</div>
+                    <p>Pessoas beneficiadas diretamente</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-number">600</div>
+                    <p>Refeições distribuídas diariamente</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-number">30</div>
+                    <p>Crianças e jovens em atividades educativas</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-number">50+</div>
+                    <p>Mulheres participando das oficinas</p>
+                </div>
+            </div>
+            
+            <div class="impact-testimonials">
+                <h3>Depoimentos</h3>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>O trabalho que a Academia Carolinas realiza na comunidade mudou completamente a vida de muitas famílias, incluindo a minha. Graças ao apoio recebido, pude me qualificar e encontrar um emprego digno.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Maria Silva</h4>
+                                <p>Moradora da Comunidade</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Meu filho participa das atividades educativas da Carolinas e percebi uma grande melhora no desempenho escolar dele. Além disso, ele está mais confiante e feliz. Sou muito grata por este trabalho.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Joana Santos</h4>
+                                <p>Mãe de aluno</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="participate-section">
+            <h2><i class="fas fa-hands section-icon"></i> Como Participar</h2>
+            
+            <div class="participate-grid">
+                <div class="participate-card">
+                    <div class="participate-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Beneficiário</h3>
+                    <p>Se você mora na Comunidade Souza Ramos ou região e deseja participar de nossos programas:</p>
+                    <ol>
+                        <li>Compareça à nossa sede durante o horário de atendimento</li>
+                        <li>Preencha o formulário de cadastro</li>
+                        <li>Participe de uma entrevista de acolhimento</li>
+                        <li>Inicie sua participação nos programas disponíveis</li>
+                    </ol>
+                    <a href="contato.html" class="btn btn-secondary">Saiba mais</a>
+                </div>
+                
+                <div class="participate-card">
+                    <div class="participate-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Voluntário</h3>
+                    <p>Temos diversas oportunidades de voluntariado em diferentes áreas:</p>
+                    <ul>
+                        <li>Apoio educacional</li>
+                        <li>Cozinha comunitária</li>
+                        <li>Comunicação e mídias sociais</li>
+                        <li>Captação de recursos</li>
+                        <li>Administrativo</li>
+                    </ul>
+                    <a href="contato.html" class="btn btn-secondary">Seja voluntário</a>
+                </div>
+                
+                <div class="participate-card">
+                    <div class="participate-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Parceiro</h3>
+                    <p>Empresas e organizações podem apoiar nosso trabalho através de:</p>
+                    <ul>
+                        <li>Doações de produtos e serviços</li>
+                        <li>Patrocínio de projetos específicos</li>
+                        <li>Voluntariado corporativo</li>
+                        <li>Assessoria técnica</li>
+                        <li>Divulgação de nossas ações</li>
+                    </ul>
+                    <a href="contato.html" class="btn btn-secondary">Seja parceiro</a>
+                </div>
+                
+                <div class="participate-card">
+                    <div class="participate-icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <h3>Doador</h3>
+                    <p>Sua contribuição financeira é fundamental para mantermos nossos programas:</p>
+                    <ul>
+                        <li>Doações pontuais ou recorrentes</li>
+                        <li>Transferências bancárias</li>
+                        <li>PIX</li>
+                        <li>Destinação de recursos via leis de incentivo</li>
+                    </ul>
+                    <a href="contato.html" class="btn btn-secondary">Faça uma doação</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2><i class="fas fa-question-circle section-icon"></i> Perguntas Frequentes</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <i class="fas fa-question-circle accordion-icon"></i> Quais são os critérios para participar dos programas?
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Priorizamos moradores da Comunidade Souza Ramos e região da Cidade Tiradentes em situação de vulnerabilidade social. Cada programa tem critérios específicos, mas em geral, consideramos a renda familiar, número de dependentes e situação de moradia. Para mais informações, entre em contato ou visite nossa sede.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <i class="fas fa-question-circle accordion-icon"></i> Qual é a frequência das atividades?
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>A maioria de nossas atividades acontece de segunda a sexta-feira, em horários específicos para cada programa. A distribuição de refeições é diária, as atividades educativas ocorrem no contraturno escolar, e as oficinas de formação têm calendário próprio que é divulgado mensalmente.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <i class="fas fa-question-circle accordion-icon"></i> Como posso me tornar um voluntário?
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Para se tornar um voluntário, você pode preencher o formulário de contato em nosso site selecionando "Voluntariado" como assunto, ou entrar em contato diretamente pelo e-mail voluntariado@carolinas.org.br. Realizamos um processo seletivo mensal e oferecemos capacitação para todos os novos voluntários.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <i class="fas fa-question-circle accordion-icon"></i> As doações são dedutíveis do imposto de renda?
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sim, somos uma organização cadastrada e habilitada para receber doações dedutíveis do imposto de renda. Emitimos recibos para todas as doações recebidas, que podem ser utilizados na declaração anual de imposto de renda, de acordo com a legislação vigente.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <i class="fas fa-question-circle accordion-icon"></i> Como posso acompanhar os resultados do trabalho?
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Publicamos relatórios trimestrais de atividades em nosso site, na seção de Transparência. Além disso, compartilhamos atualizações regulares em nossas redes sociais. Doadores e parceiros recebem relatórios específicos sobre os projetos que apoiam, e realizamos reuniões abertas à comunidade para apresentação de resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Junte-se à Nossa Causa</h2>
+            <p>Seja parte dessa transformação social. Sua contribuição, seja como beneficiário, voluntário, parceiro ou doador, faz a diferença na vida de muitas pessoas.</p>
+            <div class="cta-buttons">
+                <a href="contato.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Entre em Contato</a>
+                <a href="localizacao.html" class="btn btn-secondary"><i class="fas fa-map-marker-alt"></i> Visite-nos</a>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3><i class="fas fa-home"></i> Sobre nós</h3>
+                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes.</p>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-address-book"></i> Contato</h3>
+                    <p><i class="fas fa-envelope-open-text footer-icon"></i> Email: <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a></p>
+                    <p><i class="fas fa-phone-alt footer-icon"></i> Telefone: <a href="tel:+551199999999">(11) 99999-9999</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-paper-plane"></i> Newsletter</h3>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Carolinas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Script específico para a página Como Funciona
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handling accordion functionality
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle current item
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    const icon = this.querySelector('.icon i');
+                    
+                    // Change icon based on state
+                    if (isExpanded) {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                        content.style.maxHeight = '0';
+                    } else {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

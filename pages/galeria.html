@@ -3,15 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="Galeria de fotos e vídeos da Academia Carolinas - Momentos marcantes do nosso trabalho na Cidade Tiradentes">
+    <title>Galeria - Academia Carolinas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lightbox CSS para visualização de imagens -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
-    <header>
-        <h1>Galeria</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Academia Carolinas Logo" width="40" height="40">
+                <span>Academia Carolinas</span>
+            </div>
+            <nav class="desktop-nav" aria-label="Menu principal">
+                <a href="../index.html">Início</a>
+                <a href="quem-somos.html">Quem Somos</a>
+                
+                <a href="como-funciona.html">Como Funciona</a>
+                <a href="transparencia.html">Transparência</a>
+                <a href="galeria.html" class="active">Galeria</a>
+                <a href="localizacao.html">Localização</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+            <a href="../index.html">Início</a>
+            <a href="quem-somos.html">Quem Somos</a>
+            
+            <a href="como-funciona.html">Como Funciona</a>
+            <a href="transparencia.html">Transparência</a>
+            <a href="galeria.html" class="active">Galeria</a>
+            <a href="localizacao.html">Localização</a>
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
-    <main>
-        <p>Imagens e vídeos da galeria.</p>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1><i class="fas fa-images hero-icon"></i> Galeria</h1>
+            <p>Conheça nossa jornada através de imagens e momentos especiais</p>
+            <div class="hero-cta">
+                <a href="#photos" class="btn btn-light">Fotos</a>
+                <a href="#videos" class="btn btn-outline">Vídeos</a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,224C672,213,768,171,864,165.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="gallery-intro">
+            <h2><i class="fas fa-heart section-icon"></i> Nossos Momentos</h2>
+            <p class="intro-text">Cada imagem conta uma história de transformação, esperança e solidariedade. Nossa galeria reúne os momentos mais marcantes da jornada da Academia Carolinas junto à comunidade da Cidade Tiradentes. São registros de oficinas, distribuição de alimentos, atividades educativas, eventos culturais e tantas outras ações que refletem nossa missão de transformar vidas.</p>
+            
+            <div class="gallery-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="alimentacao">Alimentação</button>
+                <button class="category-btn" data-category="educacao">Educação</button>
+                <button class="category-btn" data-category="eventos">Eventos</button>
+                <button class="category-btn" data-category="comunidade">Comunidade</button>
+            </div>
+        </section>
+
+        <section id="photos" class="photos-section">
+            <h2><i class="fas fa-camera section-icon"></i> Fotos</h2>
+            
+            <div class="gallery-grid">
+                <!-- Categoria: Alimentação -->
+                <a href="../images/galeria/cozinha-1.jpg" class="gallery-item" data-category="alimentacao" data-fancybox="gallery" data-caption="Preparo de refeições na cozinha solidária">
+                    <img src="../images/galeria/cozinha-1.jpg" alt="Preparo de refeições na cozinha solidária">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Cozinha Solidária</h3>
+                            <p>Preparo de refeições para distribuição diária</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/distribuicao-1.jpg" class="gallery-item" data-category="alimentacao" data-fancybox="gallery" data-caption="Distribuição de marmitas para a comunidade">
+                    <img src="../images/galeria/distribuicao-1.jpg" alt="Distribuição de marmitas para a comunidade">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Distribuição de Alimentos</h3>
+                            <p>Entrega de 600 refeições diárias</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/horta-1.jpg" class="gallery-item" data-category="alimentacao" data-fancybox="gallery" data-caption="Horta comunitária da Academia Carolinas">
+                    <img src="../images/galeria/horta-1.jpg" alt="Horta comunitária da Academia Carolinas">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Horta Comunitária</h3>
+                            <p>Cultivo de alimentos orgânicos</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Categoria: Educação -->
+                <a href="../images/galeria/aula-1.jpg" class="gallery-item" data-category="educacao" data-fancybox="gallery" data-caption="Atividades educativas com crianças">
+                    <img src="../images/galeria/aula-1.jpg" alt="Atividades educativas com crianças">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Atividades Educativas</h3>
+                            <p>Acompanhamento pedagógico em contraturno escolar</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/informatica-1.jpg" class="gallery-item" data-category="educacao" data-fancybox="gallery" data-caption="Aulas de informática para jovens">
+                    <img src="../images/galeria/informatica-1.jpg" alt="Aulas de informática para jovens">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Inclusão Digital</h3>
+                            <p>Jovens aprendendo informática</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/leitura-1.jpg" class="gallery-item" data-category="educacao" data-fancybox="gallery" data-caption="Oficina de leitura e letramento">
+                    <img src="../images/galeria/leitura-1.jpg" alt="Oficina de leitura e letramento">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Incentivo à Leitura</h3>
+                            <p>Oficina de letramento antirracista</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Categoria: Eventos -->
+                <a href="../images/galeria/festa-1.jpg" class="gallery-item" data-category="eventos" data-fancybox="gallery" data-caption="Festa comunitária na Praça Souza Ramos">
+                    <img src="../images/galeria/festa-1.jpg" alt="Festa comunitária na Praça Souza Ramos">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Festa Comunitária</h3>
+                            <p>Celebração com moradores locais</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/teatro-1.jpg" class="gallery-item" data-category="eventos" data-fancybox="gallery" data-caption="Apresentação teatral de jovens">
+                    <img src="../images/galeria/teatro-1.jpg" alt="Apresentação teatral de jovens">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Arte e Cultura</h3>
+                            <p>Grupo de teatro juvenil</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/formatura-1.jpg" class="gallery-item" data-category="eventos" data-fancybox="gallery" data-caption="Formatura de alunos do curso de Cidadania">
+                    <img src="../images/galeria/formatura-1.jpg" alt="Formatura de alunos do curso de Cidadania">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Formatura</h3>
+                            <p>Conclusão do curso de Cidadania</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Categoria: Comunidade -->
+                <a href="../images/galeria/reuniao-1.jpg" class="gallery-item" data-category="comunidade" data-fancybox="gallery" data-caption="Reunião com lideranças comunitárias">
+                    <img src="../images/galeria/reuniao-1.jpg" alt="Reunião com lideranças comunitárias">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Diálogo Comunitário</h3>
+                            <p>Planejamento participativo</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/mulheres-1.jpg" class="gallery-item" data-category="comunidade" data-fancybox="gallery" data-caption="Grupo de mulheres em oficina de empreendedorismo">
+                    <img src="../images/galeria/mulheres-1.jpg" alt="Grupo de mulheres em oficina de empreendedorismo">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Empoderamento Feminino</h3>
+                            <p>Oficina de empreendedorismo para mulheres</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="../images/galeria/voluntarios-1.jpg" class="gallery-item" data-category="comunidade" data-fancybox="gallery" data-caption="Equipe de voluntários da Academia Carolinas">
+                    <img src="../images/galeria/voluntarios-1.jpg" alt="Equipe de voluntários da Academia Carolinas">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-caption">
+                            <h3>Nossos Voluntários</h3>
+                            <p>Equipe que faz a diferença</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="videos" class="videos-section">
+            <h2><i class="fas fa-video section-icon"></i> Vídeos</h2>
+            
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example1" title="Vídeo institucional da Academia Carolinas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h3>Conheça a Academia Carolinas</h3>
+                        <p>Vídeo institucional apresentando nossa história e missão</p>
+                    </div>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example2" title="Depoimentos de beneficiários" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h3>Depoimentos</h3>
+                        <p>Histórias de vida transformadas pela ação comunitária</p>
+                    </div>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example3" title="Cozinha Solidária em ação" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <h3>Cozinha Solidária</h3>
+                        <p>Um dia de trabalho na produção e distribuição de alimentos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="share-section">
+            <h2><i class="fas fa-share-alt section-icon"></i> Compartilhe Sua História</h2>
+            <p>Você faz parte da nossa história e gostaríamos de conhecer seu relato. Se você participou de nossas ações ou foi beneficiado por algum de nossos programas, compartilhe suas fotos e depoimentos conosco.</p>
+            
+            <div class="share-cta">
+                <a href="contato.html" class="btn btn-primary">Envie Seu Conteúdo</a>
+                <div class="social-share">
+                    <p>Ou compartilhe nas redes sociais:</p>
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn facebook" aria-label="Compartilhar no Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-btn instagram" aria-label="Compartilhar no Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-btn twitter" aria-label="Compartilhar no Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-btn whatsapp" aria-label="Compartilhar no WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3><i class="fas fa-home"></i> Sobre nós</h3>
+                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes.</p>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-address-book"></i> Contato</h3>
+                    <p><i class="fas fa-envelope-open-text footer-icon"></i> Email: <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a></p>
+                    <p><i class="fas fa-phone-alt footer-icon"></i> Telefone: <a href="tel:+551199999999">(11) 99999-9999</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-paper-plane"></i> Newsletter</h3>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Carolinas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar Fancybox para visualização de imagens
+            Fancybox.bind('[data-fancybox="gallery"]', {
+                // Opções do Fancybox
+                animationEffect: "fade",
+                transitionEffect: "fade",
+                buttons: [
+                    "zoom",
+                    "slideShow",
+                    "fullScreen",
+                    "thumbs",
+                    "close"
+                ]
+            });
+            
+            // Filtragem por categoria
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover classe ativa de todos os botões
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adicionar classe ativa ao botão clicado
+                    this.classList.add('active');
+                    
+                    // Obter categoria selecionada
+                    const selectedCategory = this.getAttribute('data-category');
+                    
+                    // Filtrar itens da galeria
+                    galleryItems.forEach(item => {
+                        if (selectedCategory === 'all' || item.getAttribute('data-category') === selectedCategory) {
+                            item.style.display = 'block';
+                            // Animar entrada com fade
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Animar itens da galeria no scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            document.querySelectorAll('.gallery-item, .video-item').forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
 </body>
 </html>

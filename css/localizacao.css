@@ -1,0 +1,330 @@
+/* Estilos específicos para a página de Localização */
+
+/* Hero Section com gradiente e imagem de fundo */
+.page-hero {
+    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/hero-pattern.png') center/cover;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Seção do mapa */
+.map-section {
+    margin-bottom: 80px;
+}
+
+.map-section h2, 
+.transportation-section h2,
+.neighborhood-section h2,
+.contact-cta h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.map-section h2::after, 
+.transportation-section h2::after,
+.neighborhood-section h2::after,
+.contact-cta h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ec7c28;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.address-card, 
+.contact-info, 
+.hours-info {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.address-card h3, 
+.contact-info h3, 
+.hours-info h3 {
+    color: #4c1d95;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.address-card p, 
+.contact-info p, 
+.hours-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.map-container {
+    flex: 2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Seção de transporte */
+.transportation-section {
+    margin-bottom: 80px;
+}
+
+.transportation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.transport-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.transport-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.transport-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.transport-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.transport-card h3 {
+    text-align: center;
+    color: #4c1d95;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.transport-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.transport-card ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.transport-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Seção de bairro */
+.neighborhood-section {
+    margin-bottom: 80px;
+}
+
+.neighborhood-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.neighborhood-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neighborhood-text {
+    flex: 1;
+}
+
+.neighborhood-text p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.rounded-img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* CTA Seção */
+.contact-cta {
+    background-color: #f5f5f5;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.btn-primary {
+    background-color: #4c1d95;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #6d28d9;
+}
+
+/* Media queries para responsividade */
+@media (min-width: 768px) {
+    .address-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .address-card, 
+    .contact-info, 
+    .hours-info {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .transportation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .location-content {
+        flex-direction: row;
+    }
+    
+    .address-info {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    
+    .transportation-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .neighborhood-content {
+        flex-direction: row;
+    }
+    
+    .page-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .map-section, 
+    .transportation-section, 
+    .neighborhood-section,
+    .contact-cta {
+        margin-bottom: 100px;
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.map-section,
+.transportation-section,
+.neighborhood-section,
+.contact-cta {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.transportation-section {
+    animation-delay: 0.2s;
+}
+
+.neighborhood-section {
+    animation-delay: 0.4s;
+}
+
+.contact-cta {
+    animation-delay: 0.6s;
+}

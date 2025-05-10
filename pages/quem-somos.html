@@ -3,15 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="Conheça a história, missão e valores do Carolinas - uma organização dedicada à transformação social na Cidade Tiradentes">
+    <title>Quem Somos - Carolinas</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quem-somos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Quem Somos</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Academia Carolinas Logo" width="40" height="40">
+                <span>Academia Carolinas</span>
+            </div>
+            <nav class="desktop-nav" aria-label="Menu principal">
+                <a href="../index.html">Início</a>
+                <a href="quem-somos.html" class="active">Quem Somos</a>
+                
+                <a href="como-funciona.html">Como Funciona</a>
+                <a href="transparencia.html">Transparência</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+            <a href="../index.html">Início</a>
+            <a href="quem-somos.html" class="active">Quem Somos</a>
+            
+            <a href="como-funciona.html">Como Funciona</a>
+            <a href="transparencia.html">Transparência</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
     </header>
-    <main>
-        <p>Informações sobre quem somos.</p>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Quem Somos</h1>
+            <p>Conheça nossa história, missão e valores</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="about-section">
+            <h2>Nossa História</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O Carolinas nasceu de um gesto de solidariedade em meio à adversidade. Em 2020, durante a pandemia de COVID-19, um incêndio devastou parte da favela Souza Ramos, na Cidade Tiradentes, zona leste de São Paulo. Foi então que Simone Rêgo, professora da rede municipal da região, mobilizou parceiros e recursos para atender à necessidade mais urgente daquele momento: a fome.</p>
+                    
+                    <p>O que começou com a distribuição de cestas básicas para famílias em situação de vulnerabilidade transformou-se em um vínculo profundo com a comunidade, especialmente com as mulheres da região. Percebendo as múltiplas necessidades locais, o projeto expandiu suas atividades, sempre com foco na transformação social e no fortalecimento comunitário.</p>
+                </div>
+                <div class="about-image">
+                    <img src="../images/nossa-historia.jpg" alt="Início do projeto Carolinas" class="rounded-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <h2>Nossa Missão</h2>
+            <div class="mission-content">
+                <div class="mission-image">
+                    <img src="../images/nossa-missao.jpg" alt="Pessoas trabalhando juntas no projeto Carolinas" class="rounded-img">
+                </div>
+                <div class="mission-text">
+                    <p>Promover o desenvolvimento integral de mulheres, crianças e jovens da comunidade Souza Ramos e região, através de ações que garantam segurança alimentar, educação complementar de qualidade e geração de renda, sempre valorizando a identidade cultural e a autonomia de nossos participantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do">
+            <h2>O Que Fazemos</h2>
+            
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="../images/icons/food-icon.svg" alt="Ícone de alimentação">
+                </div>
+                <div class="activity-content">
+                    <h3>Segurança Alimentar</h3>
+                    <p>Em parceria com a Rede Cozinha Escola (municipal), Cozinha Solidária, Frente Alimenta, Instituto Assaí e MST, preparamos e distribuímos 600 marmitas diárias para a comunidade, utilizando ingredientes agroecológicos que garantem uma alimentação saudável e nutritiva.</p>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="../images/icons/education-icon.svg" alt="Ícone de educação">
+                </div>
+                <div class="activity-content">
+                    <h3>Educação Complementar</h3>
+                    <p>Atendemos 30 crianças e jovens em contraturno escolar, oferecendo um espaço seguro e educativo com diversas atividades:</p>
+                    <ul class="activities-list">
+                        <li>Informática</li>
+                        <li>Capoeira</li>
+                        <li>Educação física</li>
+                        <li>Origami</li>
+                        <li>Letramento antirracista</li>
+                        <li>Literatura</li>
+                        <li>Artes</li>
+                        <li>Reforço escolar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="../images/icons/women-icon.svg" alt="Ícone de empoderamento feminino">
+                </div>
+                <div class="activity-content">
+                    <h3>Formação e Emancipação Feminina</h3>
+                    <p>Realizamos oficinas de Cidadania com as trabalhadoras da nossa organização, promovendo conscientização sobre direitos e fortalecimento de sua autonomia.</p>
+                </div>
+            </div>
+            
+            <div class="activity-card">
+                <div class="activity-icon">
+                    <img src="../images/icons/income-icon.svg" alt="Ícone de geração de renda">
+                </div>
+                <div class="activity-content">
+                    <h3>Geração de Renda</h3>
+                    <p>Desenvolvemos a fabricação de produtos agroecológicos e participamos de feiras, criando oportunidades de renda para as mulheres da comunidade e valorizando o conhecimento tradicional e o trabalho coletivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h2>Nossos Valores</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Solidariedade</h3>
+                    <p>Acreditamos no poder da união e da ajuda mútua como base para o desenvolvimento comunitário.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Sustentabilidade</h3>
+                    <p>Priorizamos práticas e produtos que respeitam o meio ambiente e a saúde de todos.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Educação Libertadora</h3>
+                    <p>Valorizamos processos educativos que empoderam os indivíduos e transformam realidades.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Combate às Desigualdades</h3>
+                    <p>Trabalhamos ativamente contra as desigualdades de gênero, raça e classe social.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Protagonismo Feminino</h3>
+                    <p>Reconhecemos e fortalecemos o papel central das mulheres na construção de comunidades mais justas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="challenges-section">
+            <h2>Nossos Desafios</h2>
+            <p>Atualmente, nosso maior desafio é ampliar nossa comunicação com o mundo externo. Estamos trabalhando para aumentar nossa visibilidade digital, garantindo transparência na prestação de contas, divulgando nosso trabalho social e buscando novas parcerias que possibilitem a expansão de nossas atividades e o alcance de mais pessoas na comunidade.</p>
+        </section>
+
+        <section class="join-us">
+            <h2>Junte-se a Nós</h2>
+            <p>Você pode fazer parte dessa história de transformação! Seja como voluntário, parceiro institucional ou apoiador, sua contribuição é fundamental para que possamos continuar e ampliar nosso trabalho.</p>
+            <div class="cta-buttons">
+                <a href="apoie.html" class="btn btn-primary">Quero Apoiar</a>
+                <a href="contato.html" class="btn btn-secondary">Entre em Contato</a>
+            </div>
+        </section>
+
+        <div class="quote">
+            <p><em>Carolinas - Tecendo redes de solidariedade e transformação na periferia de São Paulo.</em></p>
+        </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Sobre nós</h3>
+                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p>Email: <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a></p>
+                    <p>Telefone: <a href="tel:+551199999999">(11) 99999-9999</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="../images/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="#" aria-label="Instagram"><img src="../images/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="#" aria-label="YouTube"><img src="../images/icons/youtube.svg" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                        <button type="submit" class="btn btn-primary">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Carolinas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

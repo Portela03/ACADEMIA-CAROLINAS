@@ -1,0 +1,441 @@
+/* Estilos específicos para a página Quem Somos */
+
+/* Hero Section com gradiente e imagem de fundo */
+.page-hero {
+    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/hero-pattern.png') center/cover;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Seções de conteúdo */
+.about-section, 
+.mission-section, 
+.what-we-do,
+.values-section,
+.challenges-section,
+.join-us {
+    margin-bottom: 80px;
+}
+
+.about-section h2, 
+.mission-section h2, 
+.what-we-do h2,
+.values-section h2,
+.challenges-section h2,
+.join-us h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.about-section h2::after, 
+.mission-section h2::after,
+.what-we-do h2::after,
+.values-section h2::after,
+.challenges-section h2::after,
+.join-us h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ec7c28;
+}
+
+/* Conteúdo sobre nós com layout flexível */
+.about-content,
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-text,
+.mission-text {
+    flex: 1;
+}
+
+.about-image,
+.mission-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-img {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cards de atividades */
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.activity-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.activity-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.activity-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #4c1d95;
+    text-align: center;
+}
+
+.activity-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.activities-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.activities-list li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.activities-list li::before {
+    content: '•';
+    color: #ec7c28;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Grid de valores */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #ec7c28;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateX(5px);
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #4c1d95;
+}
+
+/* Seção de desafios */
+.challenges-section {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.challenges-section p {
+    line-height: 1.7;
+}
+
+/* Call to action */
+.join-us {
+    text-align: center;
+}
+
+.join-us p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Quote */
+.quote {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 60px 0;
+    color: #555;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+/* Media queries para responsividade */
+@media (min-width: 768px) {
+    .activity-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .activity-icon {
+        margin-right: 25px;
+        margin-bottom: 0;
+    }
+    
+    .activity-content h3 {
+        text-align: left;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .activities-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .about-content,
+    .mission-content {
+        flex-direction: row;
+    }
+    
+    .mission-content {
+        flex-direction: row-reverse;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .page-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-section, 
+    .mission-section, 
+    .what-we-do,
+    .values-section,
+    .challenges-section,
+    .join-us {
+        margin-bottom: 100px;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section,
+.mission-section,
+.what-we-do,
+.values-section,
+.challenges-section,
+.join-us {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.mission-section {
+    animation-delay: 0.2s;
+}
+
+.what-we-do {
+    animation-delay: 0.4s;
+}
+
+.values-section {
+    animation-delay: 0.6s;
+}
+
+.challenges-section {
+    animation-delay: 0.8s;
+}
+
+.join-us {
+    animation-delay: 1s;
+}
+
+/* Footer customizado */
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-links h3::after,
+.footer-contact h3::after,
+.footer-social h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #ec7c28;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #d1d5db;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #ec7c28;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #374151;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ec7c28;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
