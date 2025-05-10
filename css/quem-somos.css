@@ -2,7 +2,7 @@
 
 /* Hero Section com gradiente e imagem de fundo */
 .page-hero {
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
     color: white;
     text-align: center;
     padding: 80px 0;
@@ -76,7 +76,7 @@
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #ec7c28;
+    background-color: #C42430;
 }
 
 /* Conteúdo sobre nós com layout flexível */
@@ -139,7 +139,7 @@
 .activity-content h3 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    color: #4c1d95;
+    color: #EA750C;
     text-align: center;
 }
 
@@ -165,7 +165,7 @@
 
 .activities-list li::before {
     content: '•';
-    color: #ec7c28;
+    color: #C42430;
     position: absolute;
     left: 0;
     font-size: 1.2rem;
@@ -182,7 +182,7 @@
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    border-left: 4px solid #ec7c28;
+    border-left: 4px solid #C42430;
     transition: transform 0.3s;
 }
 
@@ -193,7 +193,7 @@
 .value-card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #4c1d95;
+    color: #EA750C;
 }
 
 /* Seção de desafios */
@@ -372,7 +372,7 @@ footer {
     bottom: 0;
     width: 40px;
     height: 2px;
-    background-color: #ec7c28;
+    background-color: #C42430;
 }
 
 .footer-links ul {
@@ -392,7 +392,7 @@ footer {
 
 .footer-links a:hover,
 .footer-contact a:hover {
-    color: #ec7c28;
+    color: #C42430;
 }
 
 .social-icons {
@@ -412,7 +412,7 @@ footer {
 }
 
 .social-icons a:hover {
-    background-color: #ec7c28;
+    background-color: #C42430;
 }
 
 .social-icons img {

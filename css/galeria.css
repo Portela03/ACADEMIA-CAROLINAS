@@ -2,7 +2,7 @@
 
 /* Hero Section com gradiente e imagem de fundo */
 .page-hero {
-    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 35%, #ec7c28 100%);
+    background: linear-gradient(135deg, #EA750C 0%, #C42430 100%);
     color: white;
     text-align: center;
     padding: 100px 0 120px;
@@ -73,7 +73,7 @@
 
 .btn-light {
     background-color: white;
-    color: #4c1d95;
+    color: #EA750C;
 }
 
 .btn-light:hover {
@@ -110,7 +110,7 @@
 /* Ícones de seção */
 .section-icon {
     margin-right: 10px;
-    color: #ec7c28;
+    color: #C42430;
 }
 
 /* Seção de introdução da galeria */
@@ -355,12 +355,12 @@
 }
 
 .btn-primary {
-    background-color: #4c1d95;
+    background-color: #EA750C;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #5e35b1;
+    background-color: #C42430;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }

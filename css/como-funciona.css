@@ -2,7 +2,7 @@
 
 /* Hero Section com gradiente e imagem de fundo */
 .page-hero {
-    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 35%, #ec7c28 100%);
+    background: linear-gradient(to right, #EA750C, #C42430);
     color: white;
     text-align: center;
     padding: 100px 0 120px;
@@ -109,8 +109,7 @@
 
 /* Ícones de seção */
 .section-icon {
-    margin-right: 10px;
-    color: #ec7c28;
+    color: #C42430;
 }
 
 /* Seção de metodologia */
@@ -145,7 +144,7 @@
     left: 0;
     width: 80px;
     height: 3px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
 }
 
 .intro-text {
@@ -179,7 +178,7 @@
 .pillar-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    background: linear-gradient(135deg, #EA750C, #C42430);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -190,7 +189,7 @@
 }
 
 .pillar-card h3 {
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
@@ -248,7 +247,7 @@
     transform: translateX(-50%);
     width: 120px;
     height: 4px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
 }
 
 .process-timeline {
@@ -410,7 +409,7 @@
 }
 
 .timeline-content h3 {
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 1.5rem;
     margin-bottom: 20px;
     display: inline-block;
@@ -425,7 +424,7 @@
     bottom: -8px;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, #ec7c28, rgba(236, 124, 40, 0.3));
+    background: linear-gradient(to right, #C42430, rgba(196, 36, 48, 0.3));
     border-radius: 2px;
 }
 
@@ -869,7 +868,7 @@
 .impact-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #4c1d95;
+    color: #EA750C;
     margin-bottom: 10px;
 }
 
@@ -979,7 +978,7 @@
     width: 70px;
     height: 70px;
     background-color: #f0e7ff;
-    color: #4c1d95;
+    color: #EA750C;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -989,7 +988,7 @@
 }
 
 .participate-card h3 {
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
@@ -1060,7 +1059,7 @@
 
 .accordion-icon {
     margin-right: 10px;
-    color: #ec7c28;
+    color: #C42430;
 }
 
 .accordion-header:hover {
@@ -1075,13 +1074,13 @@
     height: 30px;
     background-color: #f0e7ff;
     border-radius: 50%;
-    color: #4c1d95;
+    color: #EA750C;
     flex-shrink: 0;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .accordion-header[aria-expanded="true"] .icon {
-    background-color: #4c1d95;
+    background-color: #EA750C;
     color: white;
     transform: rotate(180deg);
 }
@@ -1102,7 +1101,7 @@
 
 /* Seção CTA */
 .cta-section {
-    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+    background: linear-gradient(135deg, #EA750C 0%, #C42430 100%);
     color: white;
     text-align: center;
     padding: 60px 40px;
@@ -1130,12 +1129,12 @@
 }
 
 .btn-primary {
-    background-color: #ec7c28;
+    background-color: #C42430;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #f38a3a;
+    background-color: #b02029;
 }
 
 .btn-primary i,

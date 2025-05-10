@@ -41,12 +41,12 @@ img {
 }
 
 .btn-primary {
-    background-color: #ec7c28;
+    background-color: #EA750C;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #d06a1f;
+    background-color: #C42430;
 }
 
 .btn-secondary {
@@ -97,7 +97,7 @@ img {
 }
 
 .desktop-nav a:hover {
-    color: #ec7c28;
+    color: #C42430;
 }
 
 .mobile-menu-btn {
@@ -176,7 +176,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(234, 117, 12, 0.9) 0%, rgba(196, 36, 48, 0.85) 100%);
     z-index: -2;
 }
 
@@ -276,7 +276,7 @@ img {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
     border-radius: 3px;
 }
 
@@ -319,7 +319,7 @@ img {
 .stat-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    background: linear-gradient(135deg, #EA750C, #C42430);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -337,7 +337,7 @@ img {
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: #4c1d95;
+    color: #EA750C;
     line-height: 1.2;
     margin-bottom: 0.5rem;
 }
@@ -363,7 +363,7 @@ img {
     right: -150px;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(76, 29, 149, 0.05) 0%, rgba(76, 29, 149, 0) 70%);
+    background: radial-gradient(circle, rgba(234, 117, 12, 0.05) 0%, rgba(234, 117, 12, 0) 70%);
     border-radius: 50%;
     z-index: 0;
 }
@@ -375,7 +375,7 @@ img {
     left: -150px;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(236, 124, 40, 0.05) 0%, rgba(236, 124, 40, 0) 70%);
+    background: radial-gradient(circle, rgba(196, 36, 48, 0.05) 0%, rgba(196, 36, 48, 0) 70%);
     border-radius: 50%;
     z-index: 0;
 }
@@ -409,7 +409,7 @@ img {
     left: 0;
     width: 100%;
     height: 6px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -426,7 +426,7 @@ img {
 .program-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    background: linear-gradient(135deg, #EA750C, #C42430);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -456,7 +456,7 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #4c1d95;
+    color: #EA750C;
     font-weight: 600;
     transition: all 0.3s ease;
     padding: 0.5rem 0;
@@ -468,7 +468,7 @@ img {
 }
 
 .program-link:hover {
-    color: #ec7c28;
+    color: #C42430;
 }
 
 .program-link:hover i {
@@ -505,7 +505,7 @@ img {
     position: absolute;
     top: 1.5rem;
     left: 2rem;
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 2rem;
     opacity: 0.15;
 }
@@ -641,7 +641,7 @@ img {
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
     border-radius: 3px;
 }
 
@@ -668,7 +668,7 @@ img {
 .cta-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    background: linear-gradient(135deg, #EA750C, #C42430);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -795,7 +795,7 @@ img {
     left: 0;
     width: 40px;
     height: 2px;
-    background-color: #ec7c28;
+    background-color: #C42430;
 }
 
 .footer-column p {
@@ -820,7 +820,7 @@ img {
 }
 
 .footer-contact li i {
-    color: #ec7c28;
+    color: #C42430;
     font-size: 1.1rem;
     margin-top: 0.2rem;
 }
@@ -831,7 +831,7 @@ img {
 }
 
 .footer-contact a:hover {
-    color: #ec7c28;
+    color: #C42430;
 }
 
 .footer-links {
@@ -852,7 +852,7 @@ img {
 }
 
 .footer-links a:hover {
-    color: #ec7c28;
+    color: #C42430;
     transform: translateX(5px);
 }
 
@@ -871,7 +871,7 @@ img {
 }
 
 .newsletter-form button {
-    background-color: #ec7c28;
+    background-color: #EA750C;
     color: white;
     border: none;
     padding: 0 1.25rem;
@@ -881,7 +881,7 @@ img {
 }
 
 .newsletter-form button:hover {
-    background-color: #d06a1f;
+    background-color: #C42430;
 }
 
 .social-icons {
@@ -903,7 +903,7 @@ img {
 }
 
 .social-icons a:hover {
-    background-color: #ec7c28;
+    background-color: #C42430;
     transform: translateY(-5px);
 }
 

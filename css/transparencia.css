@@ -2,7 +2,7 @@
 
 /* Hero Section com gradiente e imagem de fundo */
 .page-hero {
-    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 35%, #ec7c28 100%);
+    background: linear-gradient(to right, #EA750C, #C42430);
     color: white;
     text-align: center;
     padding: 100px 0 120px;
@@ -110,7 +110,7 @@
 /* Ícones de seção */
 .section-icon {
     margin-right: 10px;
-    color: #ec7c28;
+    color: #C42430;
 }
 
 /* Seção de introdução */
@@ -141,7 +141,7 @@
     left: 0;
     width: 80px;
     height: 3px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
 }
 
 .intro-text {
@@ -176,7 +176,7 @@
 .principle-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    background: linear-gradient(135deg, #EA750C, #C42430);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -187,7 +187,7 @@
 }
 
 .principle-card h3 {
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
@@ -233,11 +233,11 @@
 }
 
 .report-info h3 {
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 1.4rem;
     margin-bottom: 15px;
     font-weight: 600;
-    border-left: 4px solid #4c1d95;
+    border-left: 4px solid #EA750C;
     padding-left: 12px;
 }
 
@@ -257,7 +257,7 @@
 
 .report-meta i {
     margin-right: 6px;
-    color: #4c1d95;
+    color: #EA750C;
 }
 
 .report-download {
@@ -404,7 +404,7 @@
     top: -15px;
     width: 60px;
     height: 60px;
-    background-color: rgba(76, 29, 149, 0.06);
+    background-color: rgba(234, 117, 12, 0.06);
     border-radius: 12px;
     transform: rotate(45deg);
     z-index: 1;
@@ -413,7 +413,7 @@
 .section-line {
     flex-grow: 1;
     height: 3px;
-    background: linear-gradient(to right, rgba(76, 29, 149, 0.7), rgba(236, 124, 40, 0.1));
+    background: linear-gradient(to right, rgba(234, 117, 12, 0.7), rgba(196, 36, 48, 0.1));
     margin-left: 20px;
     border-radius: 3px;
     max-width: 70%;
@@ -427,7 +427,7 @@
     top: -3px;
     width: 9px;
     height: 9px;
-    background-color: #ec7c28;
+    background-color: #C42430;
     border-radius: 50%;
 }
 
@@ -527,7 +527,7 @@
 }
 
 .report-year {
-    background: linear-gradient(135deg, #4c1d95, #6d28d9);
+    background: linear-gradient(135deg, #EA750C, #C42430);
     color: white;
     padding: 8px 20px;
     border-radius: 30px;
@@ -629,12 +629,12 @@
 }
 
 .btn-report-download {
-    background-color: #4c1d95;
+    background-color: #EA750C;
     transition-delay: 0.1s;
 }
 
 .btn-report-view {
-    background-color: #ec7c28;
+    background-color: #C42430;
     transition-delay: 0.2s;
 }
 
@@ -664,7 +664,7 @@
 }
 
 .report-info h3 {
-    color: #4c1d95;
+    color: #EA750C;
     font-size: 1.6rem;
     margin-bottom: 15px;
     font-weight: 700;
@@ -680,7 +680,7 @@
     left: 0;
     width: 50px;
     height: 3px;
-    background: linear-gradient(to right, #4c1d95, #ec7c28);
+    background: linear-gradient(to right, #EA750C, #C42430);
     border-radius: 3px;
 }
 
@@ -717,7 +717,7 @@
 
 .report-meta i {
     margin-right: 8px;
-    color: #4c1d95;
+    color: #EA750C;
 }
 
 /* Tags de tópicos com design moderno */
@@ -781,7 +781,7 @@
 .document-icon {
     width: 50px;
     height: 50px;
-    background-color: #4c1d95;
+    background-color: #EA750C;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -852,15 +852,15 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #f0e7ff;
+    background-color: rgba(234, 117, 12, 0.1);
     border-radius: 50%;
-    color: #4c1d95;
+    color: #EA750C;
     flex-shrink: 0;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .accordion-header[aria-expanded="true"] .icon {
-    background-color: #4c1d95;
+    background-color: #EA750C;
     color: white;
     transform: rotate(45deg);
 }
@@ -881,7 +881,7 @@
 
 /* Seção CTA de contato */
 .contact-cta {
-    background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+    background: linear-gradient(135deg, #EA750C 0%, #C42430 100%);
     color: white;
     border-radius: 12px;
     padding: 50px 30px;
