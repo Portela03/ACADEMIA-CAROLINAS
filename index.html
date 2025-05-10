@@ -16,10 +16,10 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <img src="images/logo-carolinas.png" alt="Academia Carolinas Logo" width="48" height="48">
+            <a href="/" class="logo">
+                <img src="/public/logo.png" alt="Academia Carolinas Logo" width="48" height="48">
                 <span>Academia Carolinas</span>
-            </div>
+            </a>
             <nav class="desktop-nav" aria-label="Menu principal">
                 <a href="pages/quem-somos.html">Quem Somos</a>
                 <a href="pages/localizacao.html">Localização</a>
@@ -282,50 +282,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+      <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="images/logo-carolinas-white.png" alt="Academia Carolinas" width="60" height="60">
-                        <h3>Academia Carolinas</h3>
-                    </div>
-                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes desde 2022.</p>
+                    <h3><i class="fas fa-home"></i> Sobre nós</h3>
+                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Contato</h3>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Rua Exemplo, 123 - Cidade Tiradentes<br>São Paulo - SP, 08474-000</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+551199999999">(11) 99999-9999</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a>
-                        </li>
-                    </ul>
+                    <h3><i class="fas fa-address-book"></i> Contato</h3>
+                    <p><i class="fas fa-envelope-open-text footer-icon"></i> Email: <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a></p>
+                    <p><i class="fas fa-phone-alt footer-icon"></i> Telefone: <a href="tel:+551199999999">(11) 99999-9999</a></p>
                 </div>
                 <div class="footer-column">
-                    <h3>Links Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="pages/quem-somos.html">Quem Somos</a></li>
-                        <li><a href="pages/como-funciona.html">Como Funciona</a></li>
-                        <li><a href="pages/transparencia.html">Transparência</a></li>
-                        <li><a href="pages/galeria.html">Galeria</a></li>
-                        <li><a href="pages/contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Receba novidades sobre nossos projetos e eventos.</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
-                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
-                        <button type="submit" aria-label="Inscrever na newsletter"><i class="fas fa-paper-plane"></i></button>
-                    </form>
+                    <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
                     <div class="social-icons">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -333,9 +303,16 @@
                         <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
+                <div class="footer-column">
+                    <h3><i class="fas fa-paper-plane"></i> Newsletter</h3>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
+                        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2025 Academia Carolinas. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Carolinas. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
