@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academia Carolinas - Transformando Vidas, Construindo Futuros">
+    <meta name="description" content="Academia Carolinas - Transformando Vidas na Cidade Tiradentes">
     <title>Academia Carolinas</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="https://via.placeholder.com/40" alt="Academia Carolinas Logo" width="40" height="40">
+                <img src="images/logo-carolinas.png" alt="Academia Carolinas Logo" width="48" height="48">
                 <span>Academia Carolinas</span>
             </div>
             <nav class="desktop-nav" aria-label="Menu principal">
-                <a href="/pages/quem-somos.html">Quem Somos</a>
-                <a href="/pages/localizacao.html">Localização</a>
-                <a href="/pages/como-funciona.html">Como Funciona</a>
-                <a href="/pages/transparencia.html">Transparência</a>
-                <a href="/pages/galeria.html">Galeria</a>
-                <a href="/pages/contato.html">Contato</a>
+                <a href="pages/quem-somos.html">Quem Somos</a>
+                <a href="pages/localizacao.html">Localização</a>
+                <a href="pages/como-funciona.html">Como Funciona</a>
+                <a href="pages/transparencia.html">Transparência</a>
+                <a href="pages/galeria.html">Galeria</a>
+                <a href="pages/contato.html">Contato</a>
             </nav>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
                 <span></span>
@@ -33,88 +35,249 @@
             </button>
         </div>
         <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
-            <a href="/pages/quem-somos.html">Quem Somos</a>
-            <a href="/pages/localizacao.html">Localização</a>
-            <a href="/pages/como-funciona.html">Como Funciona</a>
-            <a href="/pages/transparencia.html">Transparência</a>
-            <a href="/pages/galeria.html">Galeria</a>
-            <a href="/pages/contato.html">Contato</a>
+            <a href="pages/quem-somos.html">Quem Somos</a>
+            <a href="pages/localizacao.html">Localização</a>
+            <a href="pages/como-funciona.html">Como Funciona</a>
+            <a href="pages/transparencia.html">Transparência</a>
+            <a href="pages/galeria.html">Galeria</a>
+            <a href="pages/contato.html">Contato</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="quem-somos">
+    <section class="hero">
+        <div class="hero-background">
+            <div class="overlay"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Transformando Vidas,<br>Construindo Futuros</h1>
-                <p>Junte-se a nós nessa jornada de transformação social e faça parte da mudança que queremos ver no mundo.</p>
+                <h1>Transformando vidas<br>na Cidade Tiradentes</h1>
+                <p>Somos uma organização social dedicada a promover segurança alimentar, educação e desenvolvimento comunitário para mais de 1.000 pessoas mensalmente.</p>
                 <div class="hero-buttons">
-                    <a href="#como-funciona" class="btn btn-primary">Como participar</a>
-                    <a href="#projetos" class="btn btn-secondary">Saiba Mais</a>
+                    <a href="#como-ajudar" class="btn btn-primary">Como Ajudar</a>
+                    <a href="#projetos" class="btn btn-outline">Conheça Nossos Projetos</a>
                 </div>
             </div>
         </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path fill="#ffffff" d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,42.7C840,32,960,32,1080,37.3C1200,43,1320,53,1380,58.7L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+            </svg>
+        </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <!-- Impacto Section -->
+    <section class="impact-section">
         <div class="container">
+            <div class="section-header">
+                <h2>Nosso Impacto</h2>
+                <p>Conheça os números que refletem nossa atuação e o impacto que geramos na comunidade.</p>
+            </div>
             <div class="stats-grid">
-                <div class="stat-item">
-                    <p class="stat-number">1000+</p>
-                    <p class="stat-text">Pessoas impactadas</p>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-number">120.000+</p>
+                        <p class="stat-text">Refeições servidas por ano</p>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <p class="stat-number">50+</p>
-                    <p class="stat-text">Projetos realizados</p>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-number">1.000+</p>
+                        <p class="stat-text">Pessoas beneficiadas mensalmente</p>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <p class="stat-number">100+</p>
-                    <p class="stat-text">Voluntários Ativos</p>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-number">250+</p>
+                        <p class="stat-text">Crianças em atividades educacionais</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-number">100+</p>
+                        <p class="stat-text">Voluntários ativos</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projetos">
+    <!-- Programs Section -->
+    <section class="programs-section" id="projetos">
         <div class="container">
-            <h2>Nossos Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" aria-hidden="true"></div>
-                    <div class="project-content">
-                        <h3>Título do card</h3>
-                        <p>Descrição do card</p>
-                        <a href="#" class="project-link">Saiba Mais →</a>
+            <div class="section-header">
+                <h2>Nossos Programas</h2>
+                <p>Atuamos em três frentes principais para gerar transformação social e promover o desenvolvimento comunitário.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Segurança Alimentar</h3>
+                    <p>Servimos mais de 400 refeições diárias através da nossa cozinha comunitária, garantindo uma alimentação saudável e nutritiva para famílias em situação de vulnerabilidade.</p>
+                    <a href="pages/como-funciona.html#alimentacao" class="program-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Educação e Cultura</h3>
+                    <p>Oferecemos atividades de contraturno escolar, reforço acadêmico e oficinas culturais para crianças e adolescentes, promovendo desenvolvimento integral.</p>
+                    <a href="pages/como-funciona.html#educacao" class="program-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Desenvolvimento Comunitário</h3>
+                    <p>Fortalecemos a comunidade através de cursos profissionalizantes, apoio ao empreendedorismo local e atividades de fortalecimento de vínculos.</p>
+                    <a href="pages/como-funciona.html#comunidade" class="program-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Depoimentos</h2>
+                <p>Conheça histórias de quem teve a vida transformada pela Academia Carolinas.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"A Academia Carolinas mudou a vida da minha família. Além das refeições diárias que nos ajudam muito, meus filhos participam das atividades educativas e estão evoluindo na escola."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/maria.jpg" alt="Maria Silva">
+                        <div>
+                            <h4>Maria Silva</h4>
+                            <p>Mãe de 3 filhos, moradora da Cidade Tiradentes</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image" aria-hidden="true"></div>
-                    <div class="project-content">
-                        <h3>Título do card</h3>
-                        <p>Descrição do card</p>
-                        <a href="#" class="project-link">Saiba Mais →</a>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Participar como voluntário na Academia Carolinas é uma experiência transformadora. Ver o impacto direto que causamos na vida de tantas pessoas me faz querer fazer cada vez mais."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/carlos.jpg" alt="Carlos Oliveira">
+                        <div>
+                            <h4>Carlos Oliveira</h4>
+                            <p>Voluntário há 2 anos</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image" aria-hidden="true"></div>
-                    <div class="project-content">
-                        <h3>Título do card</h3>
-                        <p>Descrição do card</p>
-                        <a href="#" class="project-link">Saiba Mais →</a>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Galeria</h2>
+                <p>Conheça nosso espaço e atividades através de imagens.</p>
+            </div>
+            <div class="gallery-grid">
+                <a href="pages/galeria.html" class="gallery-item">
+                    <img src="images/gallery/cozinha-1.jpg" alt="Cozinha Comunitária">
+                </a>
+                <a href="pages/galeria.html" class="gallery-item">
+                    <img src="images/gallery/educacao-1.jpg" alt="Atividades Educativas">
+                </a>
+                <a href="pages/galeria.html" class="gallery-item">
+                    <img src="images/gallery/espaco-1.jpg" alt="Espaço Físico">
+                </a>
+                <a href="pages/galeria.html" class="gallery-item">
+                    <img src="images/gallery/comunidade-1.jpg" alt="Atividades Comunitárias">
+                </a>
+            </div>
+            <div class="gallery-cta">
+                <a href="pages/galeria.html" class="btn btn-secondary">Ver Galeria Completa</a>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="como-funciona">
+    <section class="cta-section" id="como-ajudar">
         <div class="container">
-            <h2>Faça Parte da Mudança</h2>
-            <p>Sua contribuição pode fazer a diferença na vida de muitas pessoas. Junte-se a nós nessa missão!</p>
-            <a href="#contato" class="btn btn-secondary">Entre em Contato</a>
+            <div class="cta-grid">
+                <div class="cta-content">
+                    <h2>Como você pode ajudar</h2>
+                    <p>A transformação social que promovemos só é possível com a ajuda de pessoas como você. Existem diversas formas de contribuir com nossa missão.</p>
+                    <div class="cta-options">
+                        <div class="cta-option">
+                            <div class="cta-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <h3>Doações</h3>
+                            <p>Contribua financeiramente ou com doações de alimentos, materiais e equipamentos.</p>
+                        </div>
+                        <div class="cta-option">
+                            <div class="cta-icon">
+                                <i class="fas fa-people-carry"></i>
+                            </div>
+                            <h3>Voluntariado</h3>
+                            <p>Doe seu tempo e habilidades para ajudar em nossas atividades e projetos.</p>
+                        </div>
+                        <div class="cta-option">
+                            <div class="cta-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Parcerias</h3>
+                            <p>Sua empresa pode se tornar parceira e apoiar nossas iniciativas.</p>
+                        </div>
+                    </div>
+                    <a href="pages/contato.html" class="btn btn-primary">Entre em Contato</a>
+                </div>
+                <div class="cta-image">
+                    <img src="images/cta-image.jpg" alt="Voluntários trabalhando na Academia Carolinas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Parceiros</h2>
+                <p>Organizações que acreditam e apoiam nosso trabalho.</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/partners/partner1.png" alt="Parceiro 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/partner2.png" alt="Parceiro 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/partner3.png" alt="Parceiro 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/partner4.png" alt="Parceiro 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partners/partner5.png" alt="Parceiro 5">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -123,36 +286,60 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h3>Sobre nós</h3>
-                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes.</p>
+                    <div class="footer-logo">
+                        <img src="images/logo-carolinas-white.png" alt="Academia Carolinas" width="60" height="60">
+                        <h3>Academia Carolinas</h3>
+                    </div>
+                    <p>Transformando vidas através de ações sociais e desenvolvimento comunitário na Cidade Tiradentes desde 2022.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Contato</h3>
-                    <p>Email: <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a></p>
-                    <p>Telefone: <a href="tel:+551199999999">(11) 99999-9999</a></p>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua Exemplo, 123 - Cidade Tiradentes<br>São Paulo - SP, 08474-000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+551199999999">(11) 99999-9999</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contato@carolinas.org.br">contato@carolinas.org.br</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Redes Sociais</h3>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><img src="../images/icons/facebook.svg" alt="Facebook"></a>
-                        <a href="#" aria-label="Instagram"><img src="../images/icons/instagram.svg" alt="Instagram"></a>
-                        <a href="#" aria-label="YouTube"><img src="../images/icons/youtube.svg" alt="YouTube"></a>
-                    </div>
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/quem-somos.html">Quem Somos</a></li>
+                        <li><a href="pages/como-funciona.html">Como Funciona</a></li>
+                        <li><a href="pages/transparencia.html">Transparência</a></li>
+                        <li><a href="pages/galeria.html">Galeria</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Newsletter</h3>
+                    <p>Receba novidades sobre nossos projetos e eventos.</p>
                     <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscrição realizada com sucesso!');">
                         <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
-                        <button type="submit" class="btn btn-primary">Inscrever</button>
+                        <button type="submit" aria-label="Inscrever na newsletter"><i class="fas fa-paper-plane"></i></button>
                     </form>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2025 Carolinas. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Academia Carolinas. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
