@@ -176,7 +176,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/pages/assents/capa.svg') center center/cover no-repeat;
+    background: url('/pages/assents/capa.webp') center center/cover no-repeat;
     z-index: -2;
 }
 
