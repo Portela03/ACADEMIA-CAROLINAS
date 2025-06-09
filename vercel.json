@@ -1,8 +1,16 @@
 {
     "rewrites": [
-      {
-        "source": "/((?!css|js|pages|public|docs|images).*)",
-        "destination": "/index.html"
-      }
+        { "source": "/", "destination": "/index.html" },
+        {
+            "source": "/((?!css|js|pages|public|docs|images).*)",
+            "destination": "/index.html"
+        }
+    ],
+    "trailingSlash": false,
+    "routes": [
+        {
+            "src": "/index.html",
+            "status": 200
+        }
     ]
-  }
+}
