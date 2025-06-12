@@ -6,11 +6,5 @@
             "destination": "/index.html"
         }
     ],
-    "trailingSlash": false,
-    "routes": [
-        {
-            "src": "/index.html",
-            "status": 200
-        }
-    ]
+    "trailingSlash": false
 }
