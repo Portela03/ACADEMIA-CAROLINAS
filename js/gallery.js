@@ -127,11 +127,10 @@ function setupCategoryFilters() {
             
             // Adicionar classe ativa ao botão clicado
             this.classList.add('active');
-            
-            // Obter categoria selecionada
+       
             const selectedCategory = this.getAttribute('data-category');
             
-            // Filtrar itens da galeria
+            
             document.querySelectorAll('.gallery-item').forEach(item => {
                 if (selectedCategory === 'all' || item.getAttribute('data-category') === selectedCategory) {
                     item.style.display = 'block';
@@ -152,9 +151,7 @@ function setupCategoryFilters() {
     });
 }
 
-/**
- * Inicializa o Fancybox para a visualização de imagens
- */
+
 function initFancybox() {
     Fancybox.bind('[data-fancybox="gallery"]', {
         animationEffect: "fade",
@@ -169,11 +166,9 @@ function initFancybox() {
     });
 }
 
-/**
- * Configura as animações para os itens da galeria
- */
+
 function setupAnimations() {
-    // Animar itens da galeria no scroll
+l
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

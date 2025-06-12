@@ -1,9 +1,4 @@
-/**
- * Dados da galeria da Academia Carolinas
- * Este arquivo contém informações sobre as imagens e vídeos exibidos na galeria
- */
 
-// Array com os dados das imagens organizados por categoria
 const galleryImages = {
     'atividades-educativas': [
         {

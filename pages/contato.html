@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS para envio de e-mail -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -274,66 +276,6 @@
     </footer>
 
     <script src="../js/script.js"></script>
-    <script>
-        // Script específico para a página de contato
-        document.addEventListener('DOMContentLoaded', function() {
-            // Handling accordion functionality
-            const accordionHeaders = document.querySelectorAll('.accordion-header');
-            
-            accordionHeaders.forEach(header => {
-                header.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                    
-                    // Toggle current item
-                    this.setAttribute('aria-expanded', !isExpanded);
-                    const icon = this.querySelector('.icon i');
-                    
-                    // Change icon based on state
-                    if (isExpanded) {
-                        icon.classList.remove('fa-minus');
-                        icon.classList.add('fa-plus');
-                        content.style.maxHeight = '0';
-                    } else {
-                        icon.classList.remove('fa-plus');
-                        icon.classList.add('fa-minus');
-                        content.style.maxHeight = content.scrollHeight + 'px';
-                    }
-                });
-            });
-            
-            // Form submission handling
-            const contactForm = document.getElementById('contactForm');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Simple form validation
-                const nameField = document.getElementById('name');
-                const emailField = document.getElementById('email');
-                const messageField = document.getElementById('message');
-                
-                if (nameField.value.trim() === '' || emailField.value.trim() === '' || messageField.value.trim() === '') {
-                    alert('Por favor, preencha todos os campos obrigatórios.');
-                    return;
-                }
-                
-                // Simulate form submission success
-                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-                contactForm.reset();
-            });
-            
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
