@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- EmailJS para envio de e-mail -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Inicializa o EmailJS imediatamente -->
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("kW84IvErMM6wTuZEG");
+        })();
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -158,7 +164,7 @@
                             <option value="voluntariado">Voluntariado</option>
                             <option value="doacao">Doação</option>
                             <option value="imprensa">Imprensa</option>
-                            <option value="imprensa">Visitas </option>
+                            <option value="visitas">Visitas</option>
                             <option value="outro">Outro</option>
                         </select>
                     </div>
