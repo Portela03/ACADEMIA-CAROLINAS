@@ -26,7 +26,7 @@ o
                 phone: document.getElementById('phone').value,
                 subject: document.getElementById('subject').options[document.getElementById('subject').selectedIndex].text,
                 message: document.getElementById('message').value,
-                to_email: 'academiacarolinasadm@gmail.com' 
+                to_email: 'joao.portela03@gmail.com' 
             };
             
           
