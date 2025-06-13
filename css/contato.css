@@ -370,6 +370,173 @@
     animation: fadeIn 0.5s ease forwards;
 }
 
+/* Estilos para a seção de doação */
+.donation-section {
+    margin: 60px 0;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+    color: #555;
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.donation-info h3 {
+    font-size: 1.5rem;
+    color: #EA750C;
+    margin-bottom: 5px;
+}
+
+.institution-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.institution-cnpj {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.donation-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.donation-method {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.method-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff5ee;
+    color: #EA750C;
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
+
+.method-content {
+    flex: 1;
+}
+
+.method-content h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pix-key {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #EA750C;
+    background-color: #fff5ee;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.donation-benefits {
+    background-color: #fff5ee;
+    border-left: 4px solid #EA750C;
+    padding: 15px;
+    border-radius: 0 6px 6px 0;
+}
+
+.donation-benefits h4 {
+    color: #EA750C;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.donation-qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code-img {
+    max-width: 250px;
+    height: auto;
+    border: 8px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.donation-cta {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.donation-cta h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.donation-cta p {
+    margin-bottom: 12px;
+}
+
+.donation-cta a {
+    color: #EA750C;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.donation-cta a:hover {
+    color: #C42430;
+    text-decoration: underline;
+}
+
+/* Responsividade para a seção de doação */
+@media (max-width: 768px) {
+    .donation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .donation-section {
+        padding: 30px 20px;
+    }
+    
+    .qr-code-img {
+        max-width: 200px;
+    }
+}
+
 /* Media queries para responsividade */
 @media (min-width: 768px) {
     .contact-form {

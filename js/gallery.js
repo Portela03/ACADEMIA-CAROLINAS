@@ -97,7 +97,7 @@ function createCategoryFilters() {
             button.className = 'category-btn';
             button.dataset.category = category;
             
-            // Formatar nome da categoria
+          
             let categoryName = category.replace(/-/g, ' ');
             categoryName = categoryName.charAt(0).toUpperCase() + categoryName.slice(1);
             
@@ -105,18 +105,16 @@ function createCategoryFilters() {
             filtersDiv.appendChild(button);
         });
         
-        // Inserir os filtros após o título da seção
+      
         const galleryTitle = photosSection.querySelector('h2');
         galleryTitle.after(filtersDiv);
         
-        // Configurar os eventos dos filtros
+   
         setupCategoryFilters();
     }
 }
 
-/**
- * Configura os filtros de categoria
- */
+
 function setupCategoryFilters() {
     const categoryButtons = document.querySelectorAll('.category-btn');
     

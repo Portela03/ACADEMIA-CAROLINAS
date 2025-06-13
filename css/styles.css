@@ -58,6 +58,13 @@ img {
     opacity: 0.6;
 }
 
+/* Botão pequeno */
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
 /* Header */
 .header {
     padding: 16px 0;
@@ -1059,6 +1066,145 @@ img {
     font-size: 0.875rem;
 }
 
+/* Link de doação no footer */
+.donate-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(234, 117, 12, 0.15);
+    color: #EA750C;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.donate-link i {
+    margin-right: 8px;
+}
+
+.donate-link:hover {
+    background-color: #EA750C;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Estilo do Banner de Doação */
+.donation-banner {
+    background: linear-gradient(135deg, #EA750C, #C42430);
+    padding: 40px 0;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.donation-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('pages/assents/voluntarios.jpeg') center/cover;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.donation-banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.donation-banner-text {
+    color: white;
+    max-width: 70%;
+}
+
+.donation-banner-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.donation-banner-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.donation-banner-info {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.donation-banner-info span {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-donation {
+    background-color: white;
+    color: #C42430;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Removendo a animação de pulsação */
+.btn-donation {
+    animation: none;
+}
+
+.btn-donation i {
+    font-size: 1.2rem;
+}
+
+.btn-donation:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsividade para o banner de doação */
+@media (max-width: 768px) {
+    .donation-banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .donation-banner-text {
+        max-width: 100%;
+    }
+    
+    .donation-banner-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .donation-banner-info {
+        margin: 15px auto 0;
+    }
+    
+    .btn-donation {
+        margin: 0 auto;
+    }
+}
+
 /* Media Queries - Tablets */
 @media (min-width: 640px) {
     .hero-buttons {
@@ -1409,3 +1555,264 @@ img {
 .partner-logo:nth-child(3) { --order: 3; }
 .partner-logo:nth-child(4) { --order: 4; }
 .partner-logo:nth-child(5) { --order: 5; }
+
+/* Estilo do Banner de Doação - Nova versão */
+.donation-banner-new {
+    padding: 70px 0;
+    margin: 80px 0;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.donation-card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.donation-content {
+    flex: 1;
+    padding: 45px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.donation-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.donation-icon {
+    font-size: 28px;
+    color: white;
+    background: linear-gradient(135deg, #EA750C, #C42430);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.donation-header h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(135deg, #EA750C, #C42430);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.donation-content p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.donation-credentials {
+    background-color: #fff8f0;
+    border-left: 5px solid #EA750C;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    margin-bottom: 35px;
+}
+
+.credential-item {
+    margin-bottom: 10px;
+}
+
+.credential-item:last-child {
+    margin-bottom: 0;
+}
+
+.credential-label {
+    font-weight: 700;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.credential-item.cnpj {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.credential-item.cnpj .credential-label {
+    margin-right: 10px;
+}
+
+.credential-value {
+    font-weight: 700;
+    color: #EA750C;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.btn-donate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #EA750C, #C42430);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-donate span {
+    position: relative;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+.btn-donate i {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.btn-donate:hover {
+    transform: translateY(-3px);
+}
+
+.btn-donate:hover i {
+    transform: translateX(5px);
+}
+
+.btn-donate:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #C42430, #EA750C);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.btn-donate:hover:before {
+    opacity: 1;
+}
+
+.donation-image {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+}
+
+.donation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.donation-card:hover .donation-image img {
+    transform: none;
+}
+
+.donation-overlay {
+    display: none;
+}
+
+/* Responsividade para o novo banner de doação */
+@media (max-width: 992px) {
+    .donation-card {
+        flex-direction: column-reverse;
+    }
+    
+    .donation-image {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .donation-content {
+        padding: 35px 30px;
+    }
+    
+    .donation-header h2 {
+        font-size: 2rem;
+    }
+    
+    .donation-overlay {
+        background: linear-gradient(0deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.4) 50%, rgba(196, 36, 48, 0.6) 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .donation-banner-new {
+        padding: 50px 0;
+        margin: 60px 0;
+    }
+    
+    .donation-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .donation-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .donation-content p {
+        text-align: center;
+    }
+    
+    .btn-donate {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-content {
+        padding: 30px 20px;
+    }
+    
+    .donation-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .donation-image {
+        height: 200px;
+    }
+    
+    .credential-item.cnpj {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .credential-item.cnpj .credential-label {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .credential-value {
+        font-size: 1.1rem;
+    }
+}
