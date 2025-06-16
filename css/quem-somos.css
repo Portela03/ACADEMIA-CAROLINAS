@@ -108,21 +108,26 @@
 .about-content,
 .mission-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
     align-items: center;
     margin-top: 20px;
 }
 
-.about-text,
-.mission-text {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #444;
+/* Estilo específico para a seção de história */
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
-.about-image,
-.mission-image {
+.history-grid.reverse {
+    grid-template-areas: "text image";
+}
+
+.history-image {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -130,23 +135,23 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-image:hover,
-.mission-image:hover {
+.history-image:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.rounded-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.5s ease;
+.history-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
 }
 
-.about-image:hover .rounded-img,
-.mission-image:hover .rounded-img {
-    transform: scale(1.05);
+.history-text p {
+    margin-bottom: 1rem;
+}
+
+.history-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Estilos para a seção "O que Fazemos" - ajustado para 2 por linha */
@@ -610,6 +615,15 @@ footer {
     
     .mission-content .mission-image {
         order: -1;
+    }
+    
+    .history-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .history-grid.reverse {
+        grid-template-areas: unset;
     }
 }
 
