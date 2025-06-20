@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 phone: document.getElementById('phone').value,
                 subject: document.getElementById('subject').options[document.getElementById('subject').selectedIndex].text,
                 message: document.getElementById('message').value,
-                to_email: 'joao.portela03@gmail.com' 
+                to_email: 'academiacarolinasadm@gmail.com' 
             };
             
             // Enviando e-mail usando EmailJS
