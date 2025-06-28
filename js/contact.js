@@ -9,7 +9,55 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
-            
+
+
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const phone = document.getElementById('phone');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            let valid = true;
+            let firstInvalid = null;
+
+            contactForm.querySelectorAll('.input-error').forEach(e => e.remove());
+
+            function showError(input, msg) {
+                const error = document.createElement('div');
+                error.className = 'input-error';
+                error.style.color = '#C42430';
+                error.style.fontSize = '0.95em';
+                error.style.marginTop = '5px';
+                error.textContent = msg;
+                input.parentNode.appendChild(error);
+                if (!firstInvalid) firstInvalid = input;
+            }
+
+            if (!name || name.value.trim().length < 2) {
+                valid = false;
+                showError(name, 'Digite seu nome completo.');
+            }
+            if (!email || !/^\S+@\S+\.\S+$/.test(email.value)) {
+                valid = false;
+                showError(email, 'Digite um e-mail válido.');
+                showError(message, 'Digite um e-mail válido no campo acima.');
+            }
+            if (!phone || !/^\(?\d{2}\)?\s?9?\d{4}-?\d{4}$/.test(phone.value)) {
+                valid = false;
+                showError(phone, 'Digite um telefone válido. Ex: (11) 91234-5678');
+            }
+            if (!subject || !subject.value) {
+                valid = false;
+                showError(subject, 'Selecione um assunto.');
+            }
+            if (!message || message.value.trim().length < 10) {
+                valid = false;
+                showError(message, 'Digite uma mensagem com pelo menos 10 caracteres.');
+            }
+            if (!valid) {
+                if (firstInvalid) firstInvalid.focus();
+                return;
+            }
+
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalButtonText = submitButton.innerHTML;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
