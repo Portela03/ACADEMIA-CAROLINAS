@@ -245,7 +245,7 @@
     background-color: #C42430;
 }
 
-/* Responsividade - media */
+
 @media (min-width: 768px) {
     .address-info {
         flex-direction: row;
@@ -296,7 +296,7 @@
     }
 }
 
-/* Animações */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

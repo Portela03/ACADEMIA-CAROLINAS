@@ -137,42 +137,7 @@ const galleryImages = {
             alt: 'Início das atividades',
             title: 'Início do Projeto'
         },
-        // {
-        //     src: '/pages/galeria/INICIO-PROJETO/d55c3f73-d046-4c24-86d7-8784f98b48d9.jpg',
-        //     thumbnail: '/pages/galeria/INICIO-PROJETO/d55c3f73-d046-4c24-86d7-8784f98b48d9.jpg',
-        //     alt: 'Primeiros passos do projeto',
-        //     title: 'Início do Projeto'
-        // },
-        // {
-        //     src: '/pages/galeria/INICIO-PROJETO/IMG_2831.HEIC',
-        //     thumbnail: '/pages/galeria/INICIO-PROJETO/IMG_2831.HEIC',
-        //     alt: 'Inauguração do espaço',
-        //     title: 'Início do Projeto'
-        // },
-        // {
-        //     src: '/pages/galeria/INICIO-PROJETO/IMG_7066.HEIC',
-        //     thumbnail: '/pages/galeria/INICIO-PROJETO/IMG_7066.HEIC',
-        //     alt: 'Preparação do local',
-        //     title: 'Início do Projeto'
-        // },
-        // {
-        //     src: '/pages/galeria/INICIO-PROJETO/IMG_7434.HEIC',
-        //     thumbnail: '/pages/galeria/INICIO-PROJETO/IMG_7434.HEIC',
-        //     alt: 'Voluntários da primeira fase',
-        //     title: 'Início do Projeto'
-        // },
-        // {
-        //     src: '/pages/galeria/INICIO-PROJETO/IMG_7449.HEIC',
-        //     thumbnail: '/pages/galeria/INICIO-PROJETO/IMG_7449.HEIC',
-        //     alt: 'Construção da sede',
-        //     title: 'Início do Projeto'
-        // },
-        // {
-        //     src: '/pages/galeria/INICIO-PROJETO/IMG_8467.HEIC',
-        //     thumbnail: '/pages/galeria/INICIO-PROJETO/IMG_8467.HEIC',
-        //     alt: 'Equipe fundadora',
-        //     title: 'Início do Projeto'
-        // }
+        
     ]
 };
 

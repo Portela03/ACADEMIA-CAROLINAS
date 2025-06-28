@@ -311,7 +311,7 @@
     }
 }
 
-/* Animação*/
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -875,7 +875,7 @@
     line-height: 1.7;
 }
 
-/* Seção CTA de contato */
+
 .contact-cta {
     background: linear-gradient(135deg, #EA750C 0%, #C42430 100%);
     color: white;
@@ -929,7 +929,7 @@
     transform: translateY(0);
 }
 
-/* Media - responsividade */
+
 @media (min-width: 576px) {
     .document-card {
         padding: 25px;

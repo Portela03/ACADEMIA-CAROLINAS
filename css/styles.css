@@ -29,7 +29,7 @@ img {
     height: auto;
 }
 
-/* Botões*/
+
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -209,7 +209,7 @@ img {
     animation: fadeInUp 0.8s ease-out forwards, glowPulse 3s infinite alternate;
 }
 
-/* efeito brilho*/
+
 @keyframes glowPulse {
     0% {
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
@@ -279,7 +279,7 @@ img {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Animação */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -742,7 +742,7 @@ img {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     height: auto;
-    aspect-ratio: 4/3; /*proporção para ter consistência */
+    aspect-ratio: 4/3; 
 }
 
 .cta-image img {
@@ -757,7 +757,7 @@ img {
     transform: scale(1.03);
 }
 
-/*layout desktop */
+
 @media (min-width: 1024px) {
     .cta-grid {
         grid-template-columns: 1fr 1fr;
@@ -775,7 +775,7 @@ img {
     }
 }
 
-/*imagem tamanho adequado */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .cta-image {
         max-width: 600px;
@@ -860,7 +860,7 @@ img {
     font-weight: 500;
 }
 
-/* correção - layout em desktop */
+
 @media (max-width: 768px) {
     .partners-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -875,7 +875,7 @@ img {
     }
 }
 
-/*media query específico - desktop */
+
 @media (min-width: 769px) {
     .partners-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -893,7 +893,7 @@ img {
 
 @media (min-width: 1024px) {
     .partners-grid {
-        grid-template-columns: repeat(3, 1fr) !important; /*p 3 colunas */
+        grid-template-columns: repeat(3, 1fr) !important; 
     }
 }
 
@@ -1165,7 +1165,7 @@ img {
     gap: 10px;
 }
 
-/* tirando efeito pulsação */
+
 .btn-donation {
     animation: none;
 }
@@ -1178,7 +1178,7 @@ img {
     transform: translateY(-3px);
 }
 
-/* Responsividade - doação */
+
 @media (max-width: 768px) {
     .donation-banner-content {
         flex-direction: column;
@@ -1202,7 +1202,7 @@ img {
     }
 }
 
-/* Media - tablets */
+
 @media (min-width: 640px) {
     .hero-buttons {
         flex-wrap: nowrap;
@@ -1272,7 +1272,7 @@ img {
     }
 }
 
-/* Media - dispositivos grandes */
+
 @media (min-width: 1024px) {
     .hero {
         min-height: 90vh;
@@ -1331,7 +1331,7 @@ img {
     overflow: hidden;
 }
 
-/* tela menor */
+
 @media (max-width: 480px) {
     .hero {
         min-height: 75vh; 
@@ -1370,7 +1370,7 @@ img {
     }
 }
 
-/*dispositivos médios */
+
 @media (min-width: 481px) and (max-width: 767px) {
     .hero {
         min-height: 80vh;
@@ -1401,7 +1401,7 @@ img {
     }
 }
 
-/*tablets */
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .hero-content {
         max-width: 600px;
@@ -1451,7 +1451,7 @@ img {
     }
 }
 
-/*dispositivos de alta densidade */
+
 @media (-webkit-min-device-pixel-ratio: 3) or (min-resolution: 3dppx) {
     .hero-background {
         background-size: cover;
@@ -1462,7 +1462,7 @@ img {
     }
 }
 
-/* Animação */
+
 @media (prefers-reduced-motion: reduce) {
     .hero-content {
         animation: none;
@@ -1473,7 +1473,7 @@ img {
     }
 }
 
-/* Animação */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1733,7 +1733,7 @@ img {
     display: none;
 }
 
-/* Responsividade - banner de doação */
+
 @media (max-width: 992px) {
     .donation-card {
         flex-direction: column-reverse;

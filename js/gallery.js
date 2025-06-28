@@ -63,7 +63,7 @@ function createGalleryItem(image, category) {
 
 
 function createCategoryFilters() {
-    // filtros
+    
     const filterContainer = document.querySelector('.gallery-filters');
     if (!filterContainer) {
         
@@ -71,14 +71,14 @@ function createCategoryFilters() {
         const filtersDiv = document.createElement('div');
         filtersDiv.className = 'gallery-filters';
         
-        //botão "Todas"
+       
         const allButton = document.createElement('button');
         allButton.className = 'category-btn active';
         allButton.dataset.category = 'all';
         allButton.textContent = 'Todas';
         filtersDiv.appendChild(allButton);
         
-        // botões
+       
         Object.keys(galleryImages).forEach(category => {
             const button = document.createElement('button');
             button.className = 'category-btn';
@@ -107,7 +107,7 @@ function setupCategoryFilters() {
     
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // tirar a classe dos botões
+           
             categoryButtons.forEach(btn => btn.classList.remove('active'));
             
             
@@ -119,7 +119,7 @@ function setupCategoryFilters() {
             document.querySelectorAll('.gallery-item').forEach(item => {
                 if (selectedCategory === 'all' || item.getAttribute('data-category') === selectedCategory) {
                     item.style.display = 'block';
-                    // Animação
+                    
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = 'scale(1)';

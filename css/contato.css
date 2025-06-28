@@ -520,7 +520,7 @@
     text-decoration: underline;
 }
 
-/* Responsividade  na seção de doação */
+
 @media (max-width: 768px) {
     .donation-grid {
         grid-template-columns: 1fr;
@@ -535,7 +535,7 @@
     }
 }
 
-/* Media queries para responsividade */
+
 @media (min-width: 768px) {
     .contact-form {
         grid-template-columns: repeat(2, 1fr);

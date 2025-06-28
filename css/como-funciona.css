@@ -1,5 +1,3 @@
-/* Estilos específicos para a página Como Funciona */
-
 
 .page-hero {
     background: linear-gradient(to right, #EA750C, #C42430);
@@ -509,7 +507,7 @@
     background-color: #C42430;
 }
 
-/* Ícones específicos para cada etapa da timeline */
+
 .timeline-item:nth-child(1) .timeline-marker::after {
     content: '\f4ad';
     font-family: 'Font Awesome 5 Free';
@@ -550,7 +548,7 @@
     z-index: 1;
 }
 
-/* Media queries - timeline */
+
 @media (min-width: 768px) {
     .process-section {
         padding: 80px 40px;
@@ -708,7 +706,7 @@
     }
 }
 
-/* Animação */
+
 @keyframes fadeInScale {
     0% {
         opacity: 0;
@@ -741,7 +739,7 @@
     animation-delay: 0.8s;
 }
 
-/* Efeito de pulsação - marcadores */
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(76, 29, 149, 0.4);
@@ -937,7 +935,7 @@
     font-weight: 600;
 }
 
-/* Variação de cores para cada programa */
+
 .program-card:nth-child(1) .program-header {
     background: linear-gradient(135deg, #EA750C, #d05e0a);
 }
@@ -1327,7 +1325,7 @@
     margin-right: 8px;
 }
 
-/* Media queries */
+
 @media (min-width: 768px) {
     .pillars {
         grid-template-columns: repeat(3, 1fr);
@@ -1543,7 +1541,7 @@
     animation-delay: 1.2s;
 }
 
-/* Estilos para o accordion quando abrir */
+
 .accordion-header[aria-expanded="true"] + .accordion-content {
     border-top: 1px solid #f0f0f0;
 }

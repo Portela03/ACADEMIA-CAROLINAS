@@ -102,7 +102,7 @@
     background-color: #C42430;
 }
 
-/* Conteúdo - layout flexível */
+
 .about-content,
 .mission-content {
     display: grid;
@@ -152,7 +152,7 @@
     margin-bottom: 0;
 }
 
-/* Estilos - seção "O que Fazemos"*/
+
 .what-we-do {
     padding: 4rem 0;
 }
@@ -164,7 +164,7 @@
     margin-top: 3rem;
 }
 
-/*2 cards por linha em telaS específicas */
+/*2 cards por linha */
 @media (min-width: 768px) {
     .activities-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -217,7 +217,7 @@
     color: white;
     font-size: 2rem;
     box-shadow: 0 6px 12px rgba(234, 117, 12, 0.2);
-    flex-shrink: 0; /* nao comprimir ícone*/
+    flex-shrink: 0; 
 }
 
 .activity-card:nth-child(1) .activity-icon {
@@ -374,7 +374,7 @@
     line-height: 1.6;
 }
 
-/* para Chamar ação */
+
 .join-us {
     text-align: center;
 }
@@ -402,7 +402,7 @@
     padding: 0 20px;
 }
 
-/* Responsividade - Media*/
+
 @media (min-width: 768px) {
     .activity-card {
         align-items: flex-start;
@@ -417,7 +417,7 @@
     }
     
     .activities-list {
-        grid-template-columns: repeat(2, 1fr); /* para deixar 2 colunas */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
@@ -455,7 +455,7 @@
     }
 }
 
-/* Animações */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

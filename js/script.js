@@ -7,7 +7,7 @@ mobileMenuBtn.addEventListener('click', function() {
     mobileNav.classList.toggle('active');
 });
 
-// fechar menu
+
 const mobileNavLinks = mobileNav.querySelectorAll('a');
 mobileNavLinks.forEach(link => {
     link.addEventListener('click', function() {
@@ -27,7 +27,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Scroll - links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -45,7 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// scroll para efeitos
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     if (window.scrollY > 50) {
