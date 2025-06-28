@@ -1,4 +1,4 @@
-// Mobile menu toggle
+
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileNav = document.getElementById('mobileNav');
 
@@ -7,7 +7,7 @@ mobileMenuBtn.addEventListener('click', function() {
     mobileNav.classList.toggle('active');
 });
 
-// Fechar menu ao clicar em um link
+// fechar menu
 const mobileNavLinks = mobileNav.querySelectorAll('a');
 mobileNavLinks.forEach(link => {
     link.addEventListener('click', function() {
@@ -16,7 +16,7 @@ mobileNavLinks.forEach(link => {
     });
 });
 
-// Fechar menu ao clicar fora dele
+
 document.addEventListener('click', function(event) {
     const isClickInsideMenu = mobileNav.contains(event.target);
     const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
@@ -27,7 +27,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Scroll suave para links de âncora
+// Scroll - links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -45,7 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Detectar scroll para efeitos
+// scroll para efeitos
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     if (window.scrollY > 50) {
@@ -55,7 +55,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Verificar tamanho da tela ao carregar e redimensionar
+
 function checkScreenSize() {
     const mobileNav = document.getElementById('mobileNav');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');

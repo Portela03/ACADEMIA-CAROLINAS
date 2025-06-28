@@ -228,7 +228,7 @@
     <script src="../js/script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Tabs de anos financeiros
+            
             const tabButtons = document.querySelectorAll('.tab-btn');
             const tabPanels = document.querySelectorAll('.tab-panel');
             
@@ -236,17 +236,16 @@
                 button.addEventListener('click', function() {
                     const year = this.getAttribute('data-year');
                     
-                    // Remover classe ativa de todos os botões e painéis
+                    
                     tabButtons.forEach(btn => btn.classList.remove('active'));
                     tabPanels.forEach(panel => panel.classList.remove('active'));
                     
-                    // Adicionar classe ativa ao botão clicado e painel correspondente
+            
                     this.classList.add('active');
                     document.querySelector(`.tab-panel[data-year="${year}"]`).classList.add('active');
                 });
             });
             
-            // Accordion para FAQs
             const accordionHeaders = document.querySelectorAll('.accordion-header');
             
             accordionHeaders.forEach(header => {
@@ -254,11 +253,11 @@
                     const content = this.nextElementSibling;
                     const isExpanded = this.getAttribute('aria-expanded') === 'true';
                     
-                    // Toggle current item
+                  
                     this.setAttribute('aria-expanded', !isExpanded);
                     const icon = this.querySelector('.icon i');
                     
-                    // Change icon based on state
+                   
                     if (isExpanded) {
                         icon.classList.remove('fa-minus');
                         icon.classList.add('fa-plus');
@@ -271,7 +270,7 @@
                 });
             });
             
-            // Animação para elementos ao scrollar
+        
             const animateOnScroll = function(entries, observer) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {

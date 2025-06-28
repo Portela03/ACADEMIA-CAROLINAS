@@ -1,6 +1,4 @@
-/* Estilos específicos para a página de Transparência */
 
-/* Hero Section com gradiente e imagem de fundo */
 .page-hero {
     background: linear-gradient(to right, #EA750C, #C42430);
     color: white;
@@ -107,7 +105,7 @@
     height: auto;
 }
 
-/* Ícones de seção */
+
 .section-icon {
     margin-right: 10px;
     color: #C42430;
@@ -152,7 +150,7 @@
     color: #555;
 }
 
-/* Princípios de prestação de contas */
+
 .accountability-principles {
     display: grid;
     grid-template-columns: 1fr;
@@ -313,7 +311,7 @@
     }
 }
 
-/* Animação simples */
+/* Animação*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -337,9 +335,7 @@
     animation-delay: 0.2s;
 }
 
-/* Estilos aprimorados para a seção de Relatórios Anuais */
 
-/* Efeito de destaque para o título da seção */
 .reports-section {
     margin-bottom: 100px;
     padding: 40px 0;
@@ -431,7 +427,7 @@
     border-radius: 50%;
 }
 
-/* Melhorias na descrição da seção */
+
 .section-description {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -444,7 +440,7 @@
     padding: 0 20px;
 }
 
-/* Grid de relatórios com melhor espaçamento e responsividade */
+
 .reports-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -453,7 +449,7 @@
     padding: 0 15px;
 }
 
-/* Cartões de relatório com visual 3D e efeitos melhorados */
+
 .report-card {
     border-radius: 20px;
     overflow: visible;
@@ -485,7 +481,7 @@
     border-color: rgba(76, 29, 149, 0.2);
 }
 
-/* Miniatura do relatório com efeitos aprimorados */
+
 .report-thumbnail {
     position: relative;
     height: 240px;
@@ -515,7 +511,7 @@
     transform: scale(1.08) translateY(-5px);
 }
 
-/* Badge com design moderno */
+
 .report-badge {
     position: absolute;
     top: 15px;
@@ -554,7 +550,7 @@
     backdrop-filter: blur(5px);
 }
 
-/* Overlay com ações de visualização e download */
+
 .report-overlay {
     position: absolute;
     top: 0;
@@ -643,7 +639,7 @@
     transform: scale(1.15);
 }
 
-/* Informações do relatório com espaçamento e tipografia melhorados */
+
 .report-info {
     padding: 30px;
     display: flex;
@@ -720,7 +716,7 @@
     color: #EA750C;
 }
 
-/* Tags de tópicos com design moderno */
+
 .report-topics {
     display: flex;
     flex-wrap: wrap;
@@ -745,7 +741,7 @@
     box-shadow: 0 5px 10px rgba(76, 29, 149, 0.1);
 }
 
-/* Documentos financeiros */
+
 .financial-documents {
     margin-top: 40px;
 }
@@ -814,7 +810,7 @@
     margin-left: 10px;
 }
 
-/* Accordion para FAQs */
+
 .accordion {
     margin-top: 30px;
 }
@@ -921,7 +917,7 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Classes para animação ao scrollar */
+/* animação no scroll */
 .animate-element {
     opacity: 0;
     transform: translateY(20px);
@@ -933,7 +929,7 @@
     transform: translateY(0);
 }
 
-/* Media queries para responsividade */
+/* Media - responsividade */
 @media (min-width: 576px) {
     .document-card {
         padding: 25px;
@@ -999,7 +995,7 @@
     }
 }
 
-/* Estilos específicos para animações adicionais */
+/* animações */
 @keyframes pulseGlow {
     0% {
         box-shadow: 0 0 0 0 rgba(76, 29, 149, 0.4);
@@ -1028,7 +1024,7 @@
     animation-delay: 1.5s;
 }
 
-/* Animação para os cards de relatórios */
+/* Animação - cards*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1055,7 +1051,7 @@
     animation-delay: 0.5s;
 }
 
-/* Efeito de brilho suave quando se passa o mouse */
+/* Efeito - brilho mouse */
 .report-card-inner::after {
     content: '';
     position: absolute;
@@ -1084,7 +1080,7 @@
     background-position: 0% 0%;
 }
 
-/* Estilos para Balanços Financeiros e Relatórios */
+
 .financial-reports {
     margin: 3rem 0;
     padding: 2rem;

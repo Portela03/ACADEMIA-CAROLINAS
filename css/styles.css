@@ -1,4 +1,4 @@
-/* Reset e estilos base */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ img {
     height: auto;
 }
 
-/* Botões */
+/* Botões*/
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -58,14 +58,14 @@ img {
     opacity: 0.6;
 }
 
-/* Botão pequeno */
+
 .btn-sm {
     padding: 8px 16px;
     font-size: 0.9rem;
     margin-top: 10px;
 }
 
-/* Header */
+
 .header {
     padding: 16px 0;
     position: relative;
@@ -165,9 +165,7 @@ img {
     border-bottom: none;
 }
 
-/* Estilos específicos para a página inicial */
 
-/* Hero Section */
 .hero {
     position: relative;
     min-height: 85vh;
@@ -211,7 +209,7 @@ img {
     animation: fadeInUp 0.8s ease-out forwards, glowPulse 3s infinite alternate;
 }
 
-/* Adicione esta animação para um efeito sutil de brilho */
+/* efeito brilho*/
 @keyframes glowPulse {
     0% {
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
@@ -281,7 +279,7 @@ img {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Animação para o conteúdo */
+/* Animação */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -297,7 +295,6 @@ img {
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Section Headers */
 .section-header {
     text-align: center;
     max-width: 800px;
@@ -333,7 +330,7 @@ img {
     line-height: 1.6;
 }
 
-/* Impact Section */
+
 .impact-section {
     padding: 5rem 0 4rem;
     background-color: #fff;
@@ -395,7 +392,7 @@ img {
     line-height: 1.4;
 }
 
-/* Programs Section */
+
 .programs-section {
     padding: 5rem 0;
     background-color: #f9f7ff;
@@ -522,7 +519,7 @@ img {
     transform: translateX(5px);
 }
 
-/* Testimonials Section */
+
 .testimonials-section {
     padding: 5rem 0;
     background-color: #fff;
@@ -594,7 +591,7 @@ img {
     color: #666;
 }
 
-/* Gallery Preview */
+
 .gallery-preview {
     padding: 5rem 0;
     background-color: #f9f7ff;
@@ -653,7 +650,7 @@ img {
     margin-top: 2.5rem;
 }
 
-/* CTA Section */
+
 .cta-section {
     padding: 5rem 0;
     background-color: #fff;
@@ -745,7 +742,7 @@ img {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     height: auto;
-    aspect-ratio: 4/3; /* Proporção fixa para manter consistência */
+    aspect-ratio: 4/3; /*proporção para ter consistência */
 }
 
 .cta-image img {
@@ -760,7 +757,7 @@ img {
     transform: scale(1.03);
 }
 
-/* Melhorias para layout desktop */
+/*layout desktop */
 @media (min-width: 1024px) {
     .cta-grid {
         grid-template-columns: 1fr 1fr;
@@ -769,16 +766,16 @@ img {
     
     .cta-image {
         height: 100%;
-        max-height: 500px; /* Limita a altura máxima */
+        max-height: 500px; 
     }
     
-    /* Garantir que a imagem não fique distorcida */
+    
     .cta-content {
         padding-right: 1rem;
     }
 }
 
-/* Ajuste para imagem não ficar esmagada em tablets */
+/*imagem tamanho adequado */
 @media (min-width: 768px) and (max-width: 1023px) {
     .cta-image {
         max-width: 600px;
@@ -786,7 +783,7 @@ img {
     }
 }
 
-/* Partners Section */
+
 .partners-section {
     padding: 80px 0;
     background-color: #f8f9fa;
@@ -863,7 +860,7 @@ img {
     font-weight: 500;
 }
 
-/* Sobrescrevendo os media queries existentes para corrigir o layout em desktop */
+/* correção - layout em desktop */
 @media (max-width: 768px) {
     .partners-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -878,7 +875,7 @@ img {
     }
 }
 
-/* Novo media query específico para desktop */
+/*media query específico - desktop */
 @media (min-width: 769px) {
     .partners-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -887,7 +884,7 @@ img {
     }
 }
 
-/* Sobrescrevendo os media queries que conflitam */
+
 @media (min-width: 640px) {
     .partners-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -896,11 +893,11 @@ img {
 
 @media (min-width: 1024px) {
     .partners-grid {
-        grid-template-columns: repeat(3, 1fr) !important; /* Força 3 colunas */
+        grid-template-columns: repeat(3, 1fr) !important; /*p 3 colunas */
     }
 }
 
-/* Footer Styles */
+
 .footer {
     background-color: #1f2937;
     color: white;
@@ -1066,7 +1063,7 @@ img {
     font-size: 0.875rem;
 }
 
-/* Link de doação no footer */
+
 .donate-link {
     display: inline-flex;
     align-items: center;
@@ -1090,7 +1087,7 @@ img {
     transform: translateY(-2px);
 }
 
-/* Estilo do Banner de Doação */
+
 .donation-banner {
     background: linear-gradient(135deg, #EA750C, #C42430);
     padding: 40px 0;
@@ -1168,7 +1165,7 @@ img {
     gap: 10px;
 }
 
-/* Removendo a animação de pulsação */
+/* tirando efeito pulsação */
 .btn-donation {
     animation: none;
 }
@@ -1181,7 +1178,7 @@ img {
     transform: translateY(-3px);
 }
 
-/* Responsividade para o banner de doação */
+/* Responsividade - doação */
 @media (max-width: 768px) {
     .donation-banner-content {
         flex-direction: column;
@@ -1205,7 +1202,7 @@ img {
     }
 }
 
-/* Media Queries - Tablets */
+/* Media - tablets */
 @media (min-width: 640px) {
     .hero-buttons {
         flex-wrap: nowrap;
@@ -1228,7 +1225,7 @@ img {
     }
 }
 
-/* Media Queries - Medium Devices */
+
 @media (min-width: 768px) {
     .desktop-nav {
         display: flex;
@@ -1275,7 +1272,7 @@ img {
     }
 }
 
-/* Media Queries - Large Devices */
+/* Media - dispositivos grandes */
 @media (min-width: 1024px) {
     .hero {
         min-height: 90vh;
@@ -1324,9 +1321,7 @@ img {
     }
 }
 
-/* Ajustes responsivos para a seção Hero */
 
-/* Estilos base que já existem */
 .hero {
     position: relative;
     min-height: 85vh;
@@ -1336,10 +1331,10 @@ img {
     overflow: hidden;
 }
 
-/* Ajustes para telas menores */
+/* tela menor */
 @media (max-width: 480px) {
     .hero {
-        min-height: 75vh; /* Altura reduzida em telas muito pequenas */
+        min-height: 75vh; 
     }
     
     .hero-content {
@@ -1375,7 +1370,7 @@ img {
     }
 }
 
-/* Ajustes para dispositivos móveis médios */
+/*dispositivos médios */
 @media (min-width: 481px) and (max-width: 767px) {
     .hero {
         min-height: 80vh;
@@ -1406,7 +1401,7 @@ img {
     }
 }
 
-/* Ajustes para tablets */
+/*tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
     .hero-content {
         max-width: 600px;
@@ -1421,7 +1416,7 @@ img {
         font-size: 1.1rem;
     }
     
-    /* Em tablets, os botões podem ficar lado a lado, mas com espaçamento adequado */
+    
     .hero-buttons {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1429,10 +1424,10 @@ img {
     }
 }
 
-/* Ajuste para dispositivos de orientação paisagem em telas pequenas (como celulares deitados) */
+
 @media (max-height: 500px) and (orientation: landscape) {
     .hero {
-        min-height: 100vh; /* Ocupar toda a altura disponível */
+        min-height: 100vh; 
         padding: 2rem 0;
     }
     
@@ -1456,18 +1451,18 @@ img {
     }
 }
 
-/* Ajuste específico para dispositivos de alta densidade (como iPhone X e superiores) */
+/*dispositivos de alta densidade */
 @media (-webkit-min-device-pixel-ratio: 3) or (min-resolution: 3dppx) {
     .hero-background {
-        background-size: cover; /* Garantir que a imagem cubra bem em telas de alta densidade */
+        background-size: cover;
     }
     
     .hero-content {
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada para telas de alta definição */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); 
     }
 }
 
-/* Animação otimizada para dispositivos com recursos limitados */
+/* Animação */
 @media (prefers-reduced-motion: reduce) {
     .hero-content {
         animation: none;
@@ -1478,7 +1473,7 @@ img {
     }
 }
 
-/* Animations */
+/* Animação */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1556,7 +1551,7 @@ img {
 .partner-logo:nth-child(4) { --order: 4; }
 .partner-logo:nth-child(5) { --order: 5; }
 
-/* Estilo do Banner de Doação - Nova versão */
+
 .donation-banner-new {
     padding: 70px 0;
     margin: 80px 0;
@@ -1738,7 +1733,7 @@ img {
     display: none;
 }
 
-/* Responsividade para o novo banner de doação */
+/* Responsividade - banner de doação */
 @media (max-width: 992px) {
     .donation-card {
         flex-direction: column-reverse;

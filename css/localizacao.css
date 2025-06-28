@@ -1,6 +1,4 @@
-/* Estilos específicos para a página de Localização */
 
-/* Hero Section com gradiente e imagem de fundo */
 .page-hero {
     background: linear-gradient(to right, #EA750C, #C42430);
     color: white;
@@ -41,7 +39,7 @@
     margin: 0 auto;
 }
 
-/* Seção do mapa */
+/* Seção - mapa */
 .map-section {
     margin-bottom: 80px;
 }
@@ -122,7 +120,7 @@
     border: none;
 }
 
-/* Seção de transporte */
+/* Seção - transporte */
 .transportation-section {
     margin-bottom: 80px;
 }
@@ -181,7 +179,7 @@
     line-height: 1.5;
 }
 
-/* Seção de bairro */
+/* Seção - bairro */
 .neighborhood-section {
     margin-bottom: 80px;
 }
@@ -217,7 +215,7 @@
     height: auto;
 }
 
-/* CTA Seção */
+
 .contact-cta {
     background-color: #f5f5f5;
     padding: 50px;
@@ -247,7 +245,7 @@
     background-color: #C42430;
 }
 
-/* Media queries para responsividade */
+/* Responsividade - media */
 @media (min-width: 768px) {
     .address-info {
         flex-direction: row;

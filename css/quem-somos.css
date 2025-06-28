@@ -1,6 +1,4 @@
-/* Estilos específicos para a página Quem Somos */
 
-/* Hero Section com gradiente e imagem de fundo */
 .page-hero {
     background: linear-gradient(to right, #EA750C, #C42430);
     color: white;
@@ -41,7 +39,7 @@
     margin: 0 auto;
 }
 
-/* Títulos de seção */
+
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
@@ -64,7 +62,7 @@
     border-radius: 3px;
 }
 
-/* Seções de conteúdo */
+/* Seções - conteúdo */
 .about-section, 
 .mission-section, 
 .what-we-do,
@@ -104,7 +102,7 @@
     background-color: #C42430;
 }
 
-/* Conteúdo sobre nós com layout flexível */
+/* Conteúdo - layout flexível */
 .about-content,
 .mission-content {
     display: grid;
@@ -114,7 +112,7 @@
     margin-top: 20px;
 }
 
-/* Estilo específico para a seção de história */
+/* seção de história */
 .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -154,7 +152,7 @@
     margin-bottom: 0;
 }
 
-/* Estilos para a seção "O que Fazemos" - ajustado para 2 por linha */
+/* Estilos - seção "O que Fazemos"*/
 .what-we-do {
     padding: 4rem 0;
 }
@@ -166,7 +164,7 @@
     margin-top: 3rem;
 }
 
-/* Forçar exatamente 2 cards por linha em telas médias e grandes */
+/*2 cards por linha em telaS específicas */
 @media (min-width: 768px) {
     .activities-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -190,7 +188,7 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Cores diferentes para cada card */
+/* Cores - card */
 .activity-card:nth-child(1) {
     border-top-color: #EA750C;
 }
@@ -219,7 +217,7 @@
     color: white;
     font-size: 2rem;
     box-shadow: 0 6px 12px rgba(234, 117, 12, 0.2);
-    flex-shrink: 0; /* Impede que o ícone seja comprimido */
+    flex-shrink: 0; /* nao comprimir ícone*/
 }
 
 .activity-card:nth-child(1) .activity-icon {
@@ -280,7 +278,7 @@
     font-size: 0.9rem;
 }
 
-/* Estilos melhorados para a seção "Nossos Valores" */
+/* seção "Nossos Valores" */
 .values-section {
     padding: 4rem 0;
 }
@@ -376,7 +374,7 @@
     line-height: 1.6;
 }
 
-/* Call to action */
+/* para Chamar ação */
 .join-us {
     text-align: center;
 }
@@ -394,7 +392,7 @@
     flex-wrap: wrap;
 }
 
-/* Quote */
+
 .quote {
     text-align: center;
     font-size: 1.2rem;
@@ -404,22 +402,22 @@
     padding: 0 20px;
 }
 
-/* Media queries para responsividade */
+/* Responsividade - Media*/
 @media (min-width: 768px) {
     .activity-card {
         align-items: flex-start;
     }
     
     .activity-icon {
-        margin: 0 auto 1.5rem; /* Centralizado em todas as telas */
+        margin: 0 auto 1.5rem; 
     }
     
     .activity-content h3 {
-        text-align: center; /* Mantém centralizado */
+        text-align: center;
     }
     
     .activities-list {
-        grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
+        grid-template-columns: repeat(2, 1fr); /* para deixar 2 colunas */
     }
 }
 
@@ -498,7 +496,7 @@
     animation-delay: 1s;
 }
 
-/* Footer customizado */
+
 footer {
     background-color: #1f2937;
     color: white;
